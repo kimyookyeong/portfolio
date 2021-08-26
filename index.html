@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title>KimYooKyeong Portfolio</title>
+
+    <link href="css/index.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://codepen.io/P1N2O/pen/xxbjYqx">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta http-Equiv="Cache-Control" Content="no-cache" />
+    <meta http-Equiv="Pragma" Content="no-cache" />
+    <meta http-Equiv="Expires" Content="0" />
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+
+    <!--[if IE]>
+    <script type="text/javascript">
+    var console = { log: function() {} };
+    </script>
+    <![endif]-->
+
+    <script src="js/agendaimg.js"></script>
+    <script src="js/likaimg.js"></script>
+    <script src="js/phone1.js"></script>
+    <script src="js/phone2.js"></script>
+    <script src="js/steakimg.js"></script>
+    <script src="js/ypimg.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+
+    <style>
+      /*@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
+      @import url('./notosanskr.css');
+      @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+      .phone1 {background-image:url(img/phone.png);}
+      .phone2 {background-image:url(img/phone.png);}
+      .me {background-image:url(img/gray.png);}
+      #section0 {background-image:linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url("img/back05.jpg");}
+      #section5 {background-image:linear-gradient(rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url("img/back05.jpg");}
+    </style>
+  </head>
+
+  <body>
+      <nav id="dot">
+        <ul>
+            <li class="active"><a href="#"><em>Home</em></a></li>
+            <li><a href="#"><em>YPbooks</em></a></li>
+            <li><a href="#"><em>Steak In</em></a></li>
+            <li><a href="#"><em>agenda</em></a></li>
+            <li><a href="#"><em>likalika</em></a></li>
+            <li><a href="#"><em>About Me</em></a></li>
+        </ul>
+      </nav>
+
+      <div id="floatMenu">
+        <div class="to_menu">
+          <ul class="moreRegion" id="menu">
+            <li class="logo" class="active"><img src="img/portfolio.png" alt="pf"></li> 
+            <li data-menuanchor="div1"> <a href="#div1">Home</a></li>
+            <li data-menuanchor="div2"> <a href="#div2">YPbooks</a></li>
+            <li data-menuanchor="div3"> <a href="#div3">Steak In</a></li>
+            <li data-menuanchor="div4"> <a href="#div4">agenda</a></li>
+            <li data-menuanchor="div5"> <a href="#div5">likalika</a></li>
+            <li data-menuanchor="div6"> <a href="#div6">About Me</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="fullpage">
+
+        <!-- 페이지1 -->
+        <div class="section head0_bk hdoc" id="section0">
+          <div class="tit">
+            <img src="img/pc1.gif" alt="pf">
+            <div class="titbox">
+              <h3 class="heading" data-target-resolver></h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- 페이지 2 -->
+        <div class="section head1_bk hdoc" id="section1">
+          <div class="yp">
+            <div class="yptext">
+              <div class="yptbox">
+                <h1>PROJECT <span>1</span></h1><br>
+                <h2>도서사이트 - <span>영풍문고</span></h2><br>
+                <p><span>Open API</span></p><br>
+                <h4>POINT COLOR</h4><br>
+
+                <div class="colorbox">
+                  <div class="cbox"></div>
+                  <div class="cbox"></div>
+                  <div class="cbox"></div>
+                </div>
+
+                <br>
+                <p>국내 도서사이트 영풍문고입니다.<br>
+                  <br>
+                  모든 도서 목록들의 제목, 소개, 저자, 출판사, 정가, 표지 정보는<br>
+                  카카오 오픈 API를 활용하여 제작하였습니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 6가지의 이미지와 배경색이 자동으로 바뀌는 슬라이더로<br>
+                  이벤트, 기획전 등의 다양한 정보들이 한눈에 들어올 수 있게<br>
+                  구현하였습니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 왼쪽 측면의 사이드 배너는 사용자들에게 클릭을 유도하여<br>
+                  도서 홍보 효과를 더욱 증가시킬 수 있는 효과를 주었습니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 서브페이지에서 영업점 재고 및 위치 확인과 쿠폰 및 결제혜택을<br>
+                  확인할 수 있는 모달을 제작하여 더 많은 정보를 편리하게 얻을 수<br>
+                  있도록 구현하였습니다.</p>
+                <br>
+                <input type="button" value="main" onclick="window.open('../html_yp/main.html')">
+                <input type="button" value="sub" onclick="window.open('../html_yp/sub.html')">
+              </div>
+            </div>
+
+            <div class="ypimg"><a href="../html_yp/main.html" target="_blank"><img src="img/ypbooks.png" alt="pf"></a></div>
+          </div>
+        </div>
+
+        <!-- 페이지 3 -->
+        <div class="section head2_bk hdoc" id="section2">
+          <div class="steak">
+            <div class="steaktext">
+              <div class="steaktbox">
+                <h1>PROJECT <span>2</span></h1><br>
+                <h2>홍보사이트 - <span>Steak In</span></h2><br>
+                <p><span>responsive</span></p><br>
+                <h4>POINT COLOR</h4><br>
+
+                <div class="colorbox">
+                  <div class="cbox"></div>
+                  <div class="cbox"></div>
+                  <div class="cbox"></div>
+                </div>
+
+                <br>
+                <p>해외 스테이크 레스토랑 사이트입니다.<br>
+                  <br>
+                  컴퓨터, 태블릿, 모바일 등 사용자의 화면에 맞게 최적화된<br>
+                  레이아웃으로 보이는 반응형 웹사이트로 제작하였습니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 절제된 레이아웃을 사용하여 차분하고 정돈된 디자인으로<br>설계하였습니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 주로 사각형 그리드와 표 형식으로 효과적인 정보 전달이<br>
+                  가능하도록 하였습니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 미디어 쿼리를 사용한 반응형 웹페이지로 제작하여 폭이<br>
+                  좁은 화면일 경우 햄버거 메뉴를 이용할 수 있도록 하였습니다.</p>
+                <br>
+                <input type="button" value="main" onclick="window.open('../html_steakin/main.html')">
+                <input type="button" value="sub" onclick="window.open('../html_steakin/sub.html')">
+              </div>
+            </div>
+
+            <div class="phone1">
+              <div class="mobile1">
+                <ul>
+                  <li><img src="img/p1.png" alt="pf"></li>
+                  <li><img src="img/p2.png" alt="pf"></li>
+                  <li><img src="img/p3.png" alt="pf"></li>
+                  <li><img src="img/p4.png" alt="pf"></li>
+                  <li><img src="img/p5.png" alt="pf"></li>
+                  <li><img src="img/p6.png" alt="pf"></li>
+                  <li><img src="img/p7.png" alt="pf"></li>
+                  <li><img src="img/p8.png" alt="pf"></li>
+                  <li><img src="img/p9.png" alt="pf"></li>
+                  <li><img src="img/p10.png" alt="pf"></li>
+                  <li><img src="img/p11.png" alt="pf"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="steakimg"><a href="../html_steakin/main.html" target="_blank"><img src="img/steakin.png" alt="pf"></a></div>
+          </div>
+        </div>
+
+        <!-- 페이지 4 -->
+        <div class="section head2_bk hdoc" id="section3">
+          <div class="agenda">
+            <div class="agendatext">
+              <div class="agendatbox">
+                <h1>PROJECT <span>3</span></h1><br>
+                <h2>홍보사이트 - <span>agenda</span></h2><br>
+                <p><span>responsive</span></p><br>
+                <h4>POINT COLOR</h4><br>
+
+                <div class="colorbox">
+                  <div class="cbox"></div>
+                  <div class="cbox"></div>
+                  <div class="cbox"></div>
+                </div>
+
+                <br>
+                <p>해외 뮤직 페스티벌 사이트입니다.<br>
+                  <br>
+                  컴퓨터, 태블릿, 모바일 등 사용자의 화면에 맞게 최적화된<br>
+                  레이아웃으로 보이는 반응형 웹사이트로 제작하였습니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 개성있는 레이아웃으로 활동적인 느낌을 주었으며,<br>
+                  페스티벌과 어울리는 색감으로 주목도를 높이는 것이<br>포인트입니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 모바일로 방문 시 왼쪽 측면에 사이드 메뉴가 생성되어<br>사이트 이용에 편리함을 더했습니다.</p>
+                <br>
+                <input type="button" value="main" onclick="window.open('../html_agenda/main.html')">
+                <input type="button" value="sub" onclick="window.open('../html_agenda/sub.html')">
+              </div>
+            </div>
+
+            <div class="phone2">
+              <div class="mobile2">
+                <ul>
+                  <li><img src="img/m1.png" alt="pf"></li>
+                  <li><img src="img/m2.png" alt="pf"></li>
+                  <li><img src="img/m3.png" alt="pf"></li>
+                  <li><img src="img/m4.png" alt="pf"></li>
+                  <li><img src="img/m5.png" alt="pf"></li>
+                  <li><img src="img/m6.png" alt="pf"></li>
+                  <li><img src="img/m7.png" alt="pf"></li>
+                  <li><img src="img/m8.png" alt="pf"></li>
+                  <li><img src="img/m9.png" alt="pf"></li>
+                  <li><img src="img/m10.png" alt="pf"></li>
+                  <li><img src="img/m11.png" alt="pf"></li>
+                  <li><img src="img/m12.png" alt="pf"></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="agendaimg"><a href="../html_agenda/main.html" target="_blank"><img src="img/agenda.png" alt="pf"></a></div>
+          </div>
+        </div>
+
+        <!-- 페이지 5 -->
+        <div class="section head2_bk hdoc" id="section4">
+          <div class="lika">
+            <div class="likatext">
+              <div class="likatbox">
+                <h1>PROJECT <span>4</span></h1><br>
+                <h2>쇼핑몰사이트 - <span>likalika</span></h2><br>
+                <p><span>JSON</span></p><br>
+                <h4>POINT COLOR</h4><br>
+
+                <div class="colorbox">
+                  <div class="cbox"></div>
+                  <div class="cbox"></div>
+                  <div class="cbox"></div>
+                </div>
+
+                <br>
+                <p>국내 반려동물 용품 쇼핑몰 리카리카입니다.<br>
+                  <br>
+                  메인페이지의 인기상품, 신제품, 3가지 카테고리로 분류된 상품 목록들과<br>
+                  서브페이지의 상품 설명 글과 사진, 다른 고객이 함께 본 제품 목록<br>
+                  모두 JSON으로 구현하였습니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 마우스를 올리면 노출되는 드롭다운 메뉴로 설계하여<br>사용자가 원하는 메뉴에 빠르게 접근할 수 있도록 제작하였습니다.<br>
+                  <br>
+                  <i class="fas fa-check"></i> 기간제 할인 행사의 남은 시간을 자바스크립트로 보여지게해서<br>
+                  매출 효과를 증가시킬 수 있도록 하였습니다.</p>
+                <br>
+                <input type="button" value="main" onclick="window.open('../html_likalika/main.html')">
+                <input type="button" value="sub" onclick="window.open('../html_likalika/sub.html')">
+              </div>
+            </div>
+            <div class="likaimg"><a href="../html_likalika/main.html" target="_blank"><img src="img/likalika.jpg" alt="pf"></a></div>
+          </div>
+        </div>
+
+        <!-- 페이지 6 -->
+        <div class="section head2_bk hdoc" id="section5">
+          <div class="me">
+            <div class="mebox">
+
+              <div class="pic">
+                <img src="img/idcolor.jpg" alt="pf">
+                <div id="make">
+                  <div id="flip">
+                    <div><div>Positive</div></div>
+                    <div><div>Challenging</div></div>
+                    <div><div>Meticulous</div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="im">
+                <h2>I'M</h2><br>
+                <h1>Kim Yoo Kyeong</h1><br>
+                <h3>Web Developer & UI/UX Web Publisher</h3><br>
+                <table class="center">
+                  <tr>
+                    <th>BIRTH</th>
+                    <td>1997. 10. 25</td> 
+                  </tr>
+                  <tr>
+                    <th>MOBILE</th>
+                    <td>010 - 6661 - 6268</td>
+                  </tr>
+                  <tr>
+                    <th>ADDRESS</th>
+                    <td>경기 안산시</td>
+                  </tr>
+                  <tr>
+                    <th>EDUCATION</th>
+                    <td>서정대학교 2018년 졸업</td>
+                  </tr>
+                </table>
+
+                <table class="zen">
+                  <tr><th>TRAINING</th><tr>
+                  <tr><td>이젠컴퓨터아카데미<br>
+                    반응형 UI/UX 웹퍼블리셔 전문가 양성 과정 수료 (21년)</td></tr>
+                </table>
+
+                <table class="skbox">
+                  <tr><th>SKILL</th></tr>
+                  <tr>
+                    <td>HTML / CSS / Java Script / J-Query / AJAX / JSON</td>
+                  </tr>
+                  <tr>
+                    <td>OPEN API / Responsive Web / Photoshop / Illustrator</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- foot -->
+        <div id="foot">
+          <div class="text">Copyright 2021 . Kim Yoo-kyeong All Rights Reserved.<br>
+            Created by Kim Yoo-kyeong</div>
+        </div>
+      </div>
+
+      <script>
+        var myFullpage = new fullpage('#fullpage', {
+          anchors: ['div1', 'div2', 'div3', 'div4', 'div5', 'div6'],
+          navigation:true,
+          navigationTooltips: ['<i class="fas fa-home"></i>', '<i class="fas fa-book"></i>', '<i class="fas fa-utensils"></i>', '<i class="fas fa-music"></i>', '<i class="fas fa-dog"></i>', '<i class="fas fa-user"></i>'],
+          showActiveTooltip: true,
+          menu: '#menu',
+          scrollBar: true,
+          autoScrolling: true,
+          slidesNavigation: true,
+          responsiveHeight: 330,
+          scrollingSpeed: 700,
+          controlArrows: false
+        });
+      </script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+      <script>
+          var nav = $("#dot ul li");
+          var contents = $("#fullpage > div");
+
+          nav.click(function(e) {
+              e.preventDefault();
+              var target = $(this);
+              var index = target.index();
+              var section = contents.eq(index);
+              var offset = section.offset().top;
+
+              $("html,body").animate({
+                  scrollTop: offset
+              }, 600, "easeInOutExpo");
+          });
+
+
+          $(window).scroll(function() {
+              var wScroll = $(this).scrollTop();
+
+              if (wScroll >= contents.eq(0).offset().top) {
+                  nav.removeClass("active");
+                  nav.eq(0).addClass("active");
+              }
+              if (wScroll >= contents.eq(1).offset().top) {
+                  nav.removeClass("active");
+                  nav.eq(1).addClass("active");
+              }
+              if (wScroll >= contents.eq(2).offset().top) {
+                  nav.removeClass("active");
+                  nav.eq(2).addClass("active");
+              }
+              if (wScroll >= contents.eq(3).offset().top) {
+                  nav.removeClass("active");
+                  nav.eq(3).addClass("active");
+              }
+              if (wScroll >= contents.eq(4).offset().top) {
+                  nav.removeClass("active");
+                  nav.eq(4).addClass("active");
+              }
+              if (wScroll >= contents.eq(5).offset().top) {
+                  nav.removeClass("active");
+                  nav.eq(5).addClass("active");
+              }
+
+          });
+      </script>
+
+      <script>
+        const resolver = {
+          resolve: function resolve(options, callback) {
+            // 해결할 문자열
+            const resolveString = options.resolveString || options.element.getAttribute('data-target-resolver');
+            const combinedOptions = Object.assign({}, options, {resolveString: resolveString});
+
+            function getRandomInteger(min, max) {
+              return Math.floor(Math.random() * (max - min + 1)) + min;
+            };
+
+            function randomCharacter(characters) {
+              return characters[getRandomInteger(0, characters.length - 1)];
+            };
+
+            function doRandomiserEffect(options, callback) {
+              const characters = options.characters;
+              const timeout = options.timeout;
+              const element = options.element;
+              const partialString = options.partialString;
+
+              let iterations = options.iterations;
+
+              setTimeout(() => {
+                if (iterations >= 0) {
+                  const nextOptions = Object.assign({}, options, {iterations: iterations - 1});
+
+                  // 최종 상태로 임의의 문자가 없는 partialString을 보장
+                  if (iterations === 0) {
+                    element.textContent = partialString;
+                  } else {
+                    // partialString의 마지막 문자를 임의의 문자로 바꿈
+                    element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
+                  }
+
+                  doRandomiserEffect(nextOptions, callback)
+                } else if (typeof callback === "function") {
+                  callback(); 
+                }
+              }, options.timeout);
+            };
+
+            function doResolverEffect(options, callback) {
+              const resolveString = options.resolveString;
+              const characters = options.characters;
+              const offset = options.offset;
+              const partialString = resolveString.substring(0, offset);
+              const combinedOptions = Object.assign({}, options, {partialString: partialString});
+
+              doRandomiserEffect(combinedOptions, () => {
+                const nextOptions = Object.assign({}, options, {offset: offset + 1});
+
+                if (offset <= resolveString.length) {
+                  doResolverEffect(nextOptions, callback);
+                } else if (typeof callback === "function") {
+                  callback();
+                }
+              });
+            };
+
+            doResolverEffect(combinedOptions, callback);
+          } 
+        }
+
+        /* 글 */
+        const strings = [
+          'HTML',
+          'CSS',
+          'RESPONSIVE WEB',
+          'JAVA SCRIPT',
+          'J-QUERY',
+          'JSON',
+          'AJAX',
+          'OPEN API'
+        ];
+
+        let counter = 0;
+
+        const options = {
+          // 초기 위치
+          offset: 0,
+          // 각 임의의 문자 사이의 시간 초과
+          timeout: 5,
+          // 표시할 임의의 문자 수
+          iterations: 10,
+          // 무작위로 선택할 수 있는 캐릭터
+          characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='],
+          // 해결할 문자열
+          resolveString: strings[counter],
+          // 요소
+          element: document.querySelector('[data-target-resolver]')
+        }
+
+        // 해결 완료 시 콜백 함수
+        function callback() {
+          setTimeout(() => {
+            counter ++;
+
+            if (counter >= strings.length) {
+              counter = 0;
+            }
+
+            let nextOptions = Object.assign({}, options, {resolveString: strings[counter]});
+            resolver.resolve(nextOptions, callback);
+          }, 1000);
+        }
+
+        resolver.resolve(options, callback);
+      </script>
+
+      <script>
+        $(function(){
+          $(".ypimg").mouseover(function(){ 
+            $(".ypimg img").stop().animate({ marginTop:"-1500px" }, 3000);
+          });
+          $(".ypimg").mouseleave(function(){ 
+            $(".ypimg img").stop().animate({ marginTop:0 }, 2000);
+          });
+        });
+      </script>
+
+      <script>
+        $(function(){
+          $(".steakimg").mouseover(function(){ 
+            $(".steakimg img").stop().animate({ marginTop:"-2000px" }, 3000);
+          });
+          $(".steakimg").mouseleave(function(){ 
+            $(".steakimg img").stop().animate({ marginTop:0 }, 2000);
+          });
+        });
+      </script>
+
+      <script>
+        $(function(){
+          function phone1(){
+            $(".phone1 > .mobile1 > ul").stop().animate({marginTop:-490},function(){
+              $(".phone1 > .mobile1 > ul > li:first").appendTo(".phone1 > .mobile1 > ul")
+              $(".phone1 > .mobile1 > ul").css({marginTop:0})
+            })
+          }
+          setInterval(phone1,2000);
+        })
+      </script>
+
+      <script>
+        $(function(){
+          $(".agendaimg").mouseover(function(){ 
+            $(".agendaimg img").stop().animate({ marginTop:"-2500px" }, 3000);
+          });
+          $(".agendaimg").mouseleave(function(){ 
+            $(".agendaimg img").stop().animate({ marginTop:0 }, 2000);
+          });
+        });
+      </script>
+
+      <script>
+        $(function(){
+          function phone2(){
+            $(".phone2 > .mobile2 > ul").stop().animate({marginTop:-490},function(){
+              $(".phone2 > .mobile2 > ul > li:first").appendTo(".phone2 > .mobile2 > ul")
+              $(".phone2 > .mobile2 > ul").css({marginTop:0})
+            })
+          }
+          setInterval(phone2,2000);
+        })
+      </script>
+
+      <script>
+        $(function(){
+          $(".likaimg").mouseover(function(){ 
+            $(".likaimg img").stop().animate({ marginTop:"-3000px" }, 3000);
+          });
+          $(".likaimg").mouseleave(function(){ 
+            $(".likaimg img").stop().animate({ marginTop:0 }, 2000);
+          });
+        });
+      </script>
+      </body>
+    </html>
