@@ -1,0 +1,700 @@
+﻿<!DOCTYPE html>
+<head>
+  <title>영풍문고</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/sub.css" rel="stylesheet">
+
+  <script
+          src="https://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+          crossorigin="anonymous"></script>
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+  <script src="js/top_button.js"></script>
+  <script src="js/minibanner.js"></script>
+  <script src="js/sidebanner.js"></script>
+  <script src="js/product_modal.js"></script>
+  <script src="js/collapsible1.js"></script>
+  <script src="js/collapsible2.js"></script>
+  
+  <script src="js/api_contents.js"></script>
+  <script src="js/api_together.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- TOP 버튼 -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="far fa-arrow-alt-circle-up"></i><br>Top
+    </button>
+
+    <!-- header 시작 -->
+    <div class="header">
+      <div class="topbanner">
+        <div class="left"><img src="img/topb1.jpg"></div>
+        <div class="right"><img src="img/topb2.jpg"></div>
+      </div>
+
+      <div class="top">
+        <ul>
+          <li><a href="https://www.ypbooks.co.kr/login.yp?pageflag=myinfo">My page</a></li>
+          <li> | </li>
+          <li><a href="https://www.ypbooks.co.kr/login.yp">Login</a></li>
+          <li> | </li>
+          <li><a href="https://www.ypbooks.co.kr/member.yp">Sign Up</a></li>
+          <li> | </li>
+          <li><a href="https://www.ypbooks.co.kr/cart.yp">Cart</a></li>
+          <li> | </li>
+          <li><a href="https://www.ypbooks.co.kr/customer_center.yp">Service</a></li>
+        </ul>
+      </div>
+
+      <div class="middle">
+        <div class="logo"><a href="main.html"><img src="img/logo.png"></a></div>
+
+        <div class="search">
+          <div class="select">
+            <div class="dropdown">
+              <button class="dropbtn">통합검색 
+                <i class="fa fa-caret-down"></i>
+              </button>
+
+              <div class="dropmenu">
+                <a href="#">국내도서</a>
+                <a href="#">서양도서</a>
+                <a href="#">일본도서</a>
+                <a href="#">E-Book</a>
+                <a href="#">독자서평</a>
+                <a href="#">도서명</a>
+                <a href="#">저자명</a>
+                <a href="#">출판사명</a>
+              </div>
+            </div>
+          </div>
+
+          <input type="textbox"></input>
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div class="mini">
+        <ul class="minibanner">
+          <li><img src="img/small1.png"></li>
+          <li><img src="img/small2.png"></li>
+          <li><img src="img/small3.png"></li>
+        </ul>
+        <i class="far fa-caret-square-left"></i>
+        <i class="far fa-caret-square-right"></i>
+      </div>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><a href="sub.html">베스트도서</a></li>
+        <li><a href="sub.html">신간도서</a></li>
+        <li><a href="sub.html">국내도서</a></li>
+        <li><a href="sub.html">외국도서</a></li>
+        <li><a href="sub.html">이벤트</a></li>
+        <li><a href="sub.html">기획/테마</a></li>
+        <li><a href="sub.html">문화행사</a></li>
+        <li><a href="sub.html">기프티콘</a></li>
+        <li><a href="sub.html">회원혜택</a></li>
+        <li><a href="sub.html">출석체크</a></li>
+      </ul>
+    </div>
+  </div> <!-- header 끝 -->
+
+  <section>
+    <div id="book">
+      <div class="submenu">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li>></li>
+          <li><a href="#">
+            <select>
+              <option>국내도서</option>
+              <option>서양도서</option>
+              <option>일본도서</option>
+              <option>E-Book</option>
+            </select>
+            </a></li>
+          <li>></li>
+          <li><a href="#">
+            <select>
+              <option>인문</option>
+              <option>사전</option>
+              <option>문학</option>
+              <option>학습</option>
+              <option>아동</option>
+              <option>취미/실용</option>
+              <option>예체능</option>
+              <option>종교</option>
+              <option>잡지</option>
+              <option>정치.법률</option>
+              <option>경제.경영</option>
+              <option>외국어</option>
+              <option>정부간행물</option>
+              <option>컴퓨터</option>
+              <option>공학</option>
+              <option>자연</option>
+              <option>의학</option>
+              <option>수험서</option>
+            </select>
+            </a></li>
+          <li>></li>
+          <li><a href="#">
+            <select>
+              <option>문학</option>
+              <option>교육학</option>
+              <option>심리학</option>
+              <option>동양철학</option>
+              <option>서양철학</option>
+              <option>한국역사/지리</option>
+              <option>영인본</option>
+              <option>세계역사/지리</option>
+              <option>교양사상</option>
+              <option>인문문고</option>
+              <option>사회학</option>
+              <option>언론학/매스컴</option>
+              <option>출판학</option>
+              <option>문헌정보학</option>
+            </select>
+            </a></li>
+          <li>></li>
+          <li><a href="#">
+            <select>
+              <option>문장작법/수사학</option>
+              <option>문학이론일반</option>
+              <option>한국문학비평/평론</option>
+              <option>외국문학비평/평론</option>
+              <option>한문학/시조문학</option>
+              <option>소설론/시론</option>
+              <option>한국문학(작품집)</option>
+              <option>작가론/작품론</option>
+              <option>국어학</option>
+            </select>
+            </a></li>
+          <li><button>선택분야검색</button></li>
+        </ul>
+      </div>
+      <div class="contents">
+        <div class="product">
+          <button id="modalBtn">영업점 재고 및 위치 확인</button>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>영업점 재고·위치 (지점명 가나다순)</h2>
+        
+              <p>* 영업점 서가 위치를 확인하려면 해당 <span>영업점을 클릭</span>하세요.</p>
+              <p>* 실시간 재고수량이 변하므로 <span>전화확인 후 방문</span>바랍니다.</p>
+
+              <table class="center">
+                <tr>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=4900&isbnbr=101114686">가산마리오<br>5</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3700&isbnbr=101114686">강남역<br>4</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=8260&isbnbr=101114686">강남포스코<br>2</a></td>
+                  <td><span>경산이마트<br>0</span></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=5400&isbnbr=101114686">광복롯데<br>5</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=2400&isbnbr=101114686">광주터미널<br>6</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=6780&isbnbr=101114686">구리롯데아울렛<br>1</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=4600&isbnbr=101114686">구미롯데마트<br>2</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=6760&isbnbr=101114686">군산롯데아울렛<br>3</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=5800&isbnbr=101114686">김포공항롯데<br>25</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=8950&isbnbr=101114686">대구역롯데<br>2</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3400&isbnbr=101114686">대전터미널<br>5</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=5300&isbnbr=101114686">마산롯데<br>3</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3300&isbnbr=101114686">목포터미널<br>1</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=5250&isbnbr=101114686">미아롯데<br>2</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3800&isbnbr=101114686">부산남포<br>2</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3000&isbnbr=101114686">부산대<br>2</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3070&isbnbr=101114686">부산하단<br>2</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=4500&isbnbr=101114686">분당서현<br>6</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=2300&isbnbr=101114686">분당오리<br>4</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3080&isbnbr=101114686">사당역<br>8</a></td>
+                  <td><span>세종<br>0</span></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=2800&isbnbr=101114686">수원NC<br>3</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=6700&isbnbr=101114686">스타필드고양<br>4</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=6770&isbnbr=101114686">스타필드시티위례<br>11</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=6790&isbnbr=101114686">스타필드안성<br>5</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3600&isbnbr=101114686">스타필드코엑스몰<br>6</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=6500&isbnbr=101114686">스타필드하남<br>5</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3060&isbnbr=101114686">신림포도몰<br>6</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3500&isbnbr=101114686">여의도IFC몰<br>9</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3050&isbnbr=101114686">왕십리역<br>4</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=6750&isbnbr=101114686">용산아이파크몰<br>9</a></td>
+                </tr>
+                <tr>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=8400&isbnbr=101114686">유성<br>5</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=6400&isbnbr=101114686">의정부신세계<br>4</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=8800&isbnbr=101114686">인천스퀘어원<br>2</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=2200&isbnbr=101114686">인천터미널<br>5</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3900&isbnbr=101114686">전주터미널<br>3</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=2000&isbnbr=101114686">종각종로<br>6</a></td>
+                  <td><span>죽전이마트<br>0</span></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=7100&isbnbr=101114686">진주<br>4</a></td>
+                </tr>
+                <tr>
+                  <td><span>천안불당<br>0</span></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=8200&isbnbr=101114686">청주<br>3</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=3200&isbnbr=101114686">포항남구<br>3</a></td>
+                  <td><a href="https://www.ypbooks.co.kr/ypbooks/book/pop_location.jsp?brancd=4700&isbnbr=101114686">홍대<br>3</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <button><a href="https://www.ypbooks.co.kr/bookpreview.yp?isbn=9791165343729&adult=Y&skinUrl=">미리보기</a></button>
+        </div>
+
+        <div class="subject">
+          <button>소득공제</button>
+          <table>
+            <tr>
+              <td>정가</td>
+              <td><del>15,000원</del></td>
+            </tr>
+            <tr>
+              <td>판매가</td>
+              <td><span><b>13,500원</b> (10% 할인)</span></td>
+            </tr>
+            <tr>
+              <td>적립금</td>
+              <td><b>750원</b> (5%)</td>
+            </tr>
+            <tr>
+              <td>배송일정</td>
+              <td><span>오늘 출고 예정 (주말/공휴일 제외)</span></td>
+            </tr>
+            <tr>
+              <td></td>
+			  <td><button><a href="#">주문 수량 변경시 안내</a></button><button><a href="#">배송안내</a></button></td>
+            </tr>
+            <tr>
+              <td>쿠폰 및 결제혜택</td>
+              <td><button class="check" onclick="myFunction()">확인하기
+				    <span class="popuptext" id="myPopup">
+      
+						<div class="popupbox1">
+							<p>이벤트/쿠폰</p><br>
+							<h4>최대 4,000원!<br>신비한 삼계탕 ll 도서교환권!</h4>
+						</div>
+        
+						<div class="popupbox2">
+							<p>결제사 혜택</p><br>
+							<img src="img/kakaopay.gif"><h4>5만원 이상 3천원 할인</h4><br>
+							<img src="img/payco.gif"><h4>생애 첫 결제 2천원 할인</h4><br>
+							<img src="img/npay.gif"><h4>최대 6% 적립</h4>
+						</div>
+        
+						<div class="popupbox3">
+							<p>카드사 혜택</p><br>
+							<h4>카드사 무이자 혜택</h4><br>
+							<h5><a href="https://www.ypbooks.co.kr/customer_center.yp?targetpage=notice_info&hiddenBIdx=2183">자세히보기</a></h5>
+						</div>
+        
+					</span>
+				</div>
+        </div>
+        
+      </span>
+			  </button></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="order">
+          <div class="orderbox">
+            <div class="number"><p>주문수량</p> <input type="textbox" placeholder="1"></input></div>
+            <div class="four">
+              <button class="cart"><a href="#">장바구니 담기</a></button>
+              <button class="buy"><a href="#">바로구매</a></button>
+              <button class="now"><a href="#">나우드림</a></button>
+              <button class="my"><a href="#">내 서재 담기</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="size">
+      <table class="size">
+        <tr>
+          <th>크기</th>
+            <td>A5 (210mm X 148mm, 국판)</td>
+        </tr>
+        <tr>
+          <th>제품구성</th>
+            <td>단행본</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="together">
+      <h3>이 책을 구매하신분들이 함께 구매하신 상품입니다.</h3>
+      <div class="togetherbox">
+        <div class="tbox"></div>
+        <div class="tbox"></div>
+        <div class="tbox"></div>
+        <div class="tbox"></div>
+        <div class="tbox"></div>
+      </div>
+    </div>
+
+    <div id="system">
+      <ul>
+        <li class="it"><a href="#system">이 책의 분류</a></li>
+        <li><a href="#info">도서정보</a></li>
+        <li><a href="#time">목차 및 본문</a></li>
+        <li><a href="#account">출판사서평</a></li>
+        <li><a href="#writer">저자 및 역자 정보</a></li>
+        <li><a href="#reader">독자서평</a></li>
+      </ul>
+      <p>국내도서 > 문학 > 국내소설 > 한국소설</p>
+    </div>
+
+    <div id="info">
+      <ul>
+        <li><a href="#system">이 책의 분류</a></li>
+        <li class="it"><a href="#info">도서정보</a></li>
+        <li><a href="#time">목차 및 본문</a></li>
+        <li><a href="#account">출판사서평</a></li>
+        <li><a href="#writer">저자 및 역자 정보</a></li>
+        <li><a href="#reader">독자서평</a></li>
+      </ul>
+      <div class="textbox"></div>
+    </div>
+
+    <div id="time">
+      <ul>
+        <li><a href="#system">이 책의 분류</a></li>
+        <li><a href="#info">도서정보</a></li>
+        <li class="it"><a href="#time">목차 및 본문</a></li>
+        <li><a href="#account">출판사서평</a></li>
+        <li><a href="#writer">저자 및 역자 정보</a></li>
+        <li><a href="#reader">독자서평</a></li>
+      </ul>
+      <button class="collapsible1">[목 차]</button>
+      <div class="this1">
+        <p><br>프롤로그 - 상처받지 않고 끝까지 사랑하기<br>
+          <br>
+          1장 - 페니의 첫 번째 연봉협상<br>
+          2장 - 민원관리국<br>
+          3장 - 와와 슬립랜드와 꿈 일기를 쓰는 남자<br>
+          4장 - 오트라만이 만들 수 있는 꿈<br>
+          5장 - 테스트 센터의 촉각 코너<br>
+          6장 - 비수기의 산타클로스<br>
+          7장 - 전하지 못한 초대장<br>
+          8장 - 녹틸루카 세탁소<br>
+          9장 - 초대형 파자마 파티<br>
+          <br>
+          에필로그1 - 올해의 꿈 시상식<br>
+          에필로그2 - 막심과 드림캐처</p>
+      </div>
+      <button class="collapsible2">[본 문]</button>
+      <div class="this2">
+        <p><br>사실 최근에 달러구트의 모든 관심은 가을에 진행할 어떤 ‘커다란 행사’에 쏠려 있었다. 그건 아직 가게의 직원들조차 모르는 달러구트의 야심 찬 계획이었다.<br>
+        다행히 관련 업체들로부터 긍정적인 회신이 속속 도착하고 있었다. 이대로라면 몇 달 뒤에는 직원들에게도 두근거리는 소식을 전할 수 있을 것이다.<br>
+        그는 베드타운 가구점에서 온 마지막 편지까지 읽고 나서 뻐근한 허리를 쭉 펴며 일어났다. 침대 위에 마구잡이로 던져 놓은 편지들을 지금 당장 정리할 엄두가 나지 않았다.<br>
+        “언제쯤 정리가 쉬워질는지…. 주말에는 대청소를 해야겠군.”<br>
+        그는 청소를 미루고, 대신 한쪽 벽 전체에 딱 맞게 짜 넣은 책장 앞에 섰다. 자기 전에 침대에서 가볍게 읽을거리를 찾을 요량이었다. 그의 눈높이와 비슷한 위치에 연도가 표시된 다이어리가 순서대로 꽂혀 있었다. 달러구트는 그중에 ‘1999년’이라고 적혀 있는 다이어리를 빼 들었다.<br>
+        “좋아, 행사를 열기 전에 손님들의 예전 일기도 읽어두는 게 좋겠군. 도움이 되겠어.”<br>
+        다이어리는 크기가 조금씩 다른 종이들을 질긴 끈으로 엮고 겉에 커버를 달아 만든 낡은 물건이었다. 두꺼운 갱지로 만든 거칠거칠한 커버에는 얼룩덜룩한 세월의 흔적이 남아 있었다. 커버 한가운데 까만 잉크로 적어 놓은 ‘1999년 꿈 일기’라는 글씨는 달러구트 본인의 필체였다. 그는 옛날에도 그랬고 지금도 무언가를 손수 적거나 만드는 걸 좋아했다. 반대로, 기계를 다루는 것이 달러구트에게는 가장 어려운 숙제였다. 프린터처럼 비교적 간단한 기계조차 자주 고장을 내기 일쑤라는 건 백화점의 모든 직원이 아는 사실이었다.<br>
+        그는 한 손에 낡은 다이어리를 들고, 입구와 가장 가까운 침대의 이불 안으로 단숨에 쑥 들어갔다. 침구의 보들보들한 감촉이 온몸 구석구석을 와락 껴안아 주는 것 같았다. 다이어리를 펼쳐 들고 몇 장 넘기자마자 졸음이 쏟아지기 시작했다. 기다란 손가락으로 눈가를 문지르며 조금만 더 버텨보려고 했지만, 그의 컨디션이 허락하지 않았다. 가게 일에다가 행사의 기초 준비를 혼자서 몰래 하느라 오늘치 체력은 다 써버린 듯했다.<br>
+        ‘젊었을 때는 남는 게 체력이었는데….’ 한숨을 푹 쉬는데 그마저도 하품이 되어 나왔다. 하품이 쏟아져 나오면서 눈물까지 찔끔 흘렀다. 지금으로선 푹 자고 일어나는 게 훨씬 좋은 선택일 것이다. 내일은 직원들의 연봉협상 일정까지 빼곡하게 잡혀 있었다. 일기는 나중에 틈틈이 읽어보기로 생각을 바꿨다.<br>
+        <br>
+        - 프롤로그</p>
+      </div>
+    </div>
+
+    <div id="account">
+      <ul>
+        <li><a href="#system">이 책의 분류</a></li>
+        <li><a href="#info">도서정보</a></li>
+        <li><a href="#time">목차 및 본문</a></li>
+        <li class="it"><a href="#account">출판사서평</a></li>
+        <li><a href="#writer">저자 및 역자 정보</a></li>
+        <li><a href="#reader">독자서평</a></li>
+      </ul>
+      <p>13주 연속 베스트셀러, 국내도서 종합 베스트셀러 1위,<br>
+        화제의 도서 『광고의 8원칙』의 저자 유은정,<br>
+        이번에는 『상처받지 않고 끝까지 사랑하기』로 당신의 삶을 뒤흔든다!<br>
+        <br>
+        경영자, 직장인, 학생, 주부 등<br>
+        누구에게나 오케팅이 필요하다<br>
+        오케팅을 반복하면<br>
+        당신도 상위 5% 부자가 될 수 있다!<br>
+        <br>
+        누구나 부자가 되기를 꿈꾼다. 또 어디서든 인정받기를 원한다. 자신의 분야에서 성공하기 위해 많은 이들이 피나는 노력을 한다. 하지만 특별한 전략 없이 무의식적으로 노력만 하면 성공으로 가는 길은 더딜 뿐이다.<br>
+        <br>
+        똑같은 일을 해도 ‘방법’을 아는 사람은 어디서나 더 성공한다. 이 책은 바로 이 ‘방법’을 더 많은 이들에게 알려 주기 위해 세상에 나왔다. 리스크 없이 안정적으로 성공하는 방법, 바로 오케팅을 반복하는 것이다. 『상처받지 않고 끝까지 사랑하기』는 95%와는 다른 사고방식을 일깨워 줌으로써 상위 5%가 되는 길로 이끌어 준다. 지금보다 더 나은 삶을 살고자 하는 모든 이들이 읽어야 할 필독서이다.<br>
+        <br>
+        목표를 세우고 도전할 때마다 숱한 의심을 받았다. 새로운 일에 과감히 도전하는 족족 물음표가 꼬리표처럼 따라붙었다. 하지만 저자는 모두가 불가능하다고 여긴 일들을 오케팅으로 하나하나 달성해 왔다.</p>
+    </div>
+
+    <div id="writer">
+      <ul>
+        <li><a href="#system">이 책의 분류</a></li>
+        <li><a href="#info">도서정보</a></li>
+        <li><a href="#time">목차 및 본문</a></li>
+        <li><a href="#account">출판사서평</a></li>
+        <li class="it"><a href="#writer">저자 및 역자 정보</a></li>
+        <li><a href="#reader">독자서평</a></li>
+      </ul>
+      <p><b>유은정</b><br>
+        장편소설 《내 인생의 스프링 캠프》로 제1회 세계청소년문학상을, 《내 심장을 쏴라》로 제5회 세계문학상을 수상했다. 장편소설 《7년의 밤》 《28》 《종의 기원》은 주요 언론과 서점에서 ‘올해의 책’으로 선정되며 큰 화제를 모았고, 영미권의 펭귄북스·리틀브라운을 비롯해 프랑스, 독일, 러시아, 중국, 일본, 브라질 등 해외 20여 개국의 출판사에서 번역 출판되면서 많은 독자들의 사랑을 받고 있다. 이외에도 에세이 《유은정의 히말라야 환상방황》 《유은정, 이야기를 이야기하다》가 있다. 《진이, 지니》 《완전한 행복》을 출간했다.</p>
+    </div>
+
+    <div id="reader">
+      <ul>
+        <li><a href="#system">이 책의 분류</a></li>
+        <li><a href="#info">도서정보</a></li>
+        <li><a href="#time">목차 및 본문</a></li>
+        <li><a href="#account">출판사서평</a></li>
+        <li><a href="#writer">저자 및 역자 정보</a></li>
+        <li class="it"><a href="#reader">독자서평</a></li>
+      </ul>
+
+      <div class="readerbox">
+        <h3>독자서평 쓰기</h3>
+        <p>로그인을 하시면 독자서평을 쓰실 수 있습니다.</p>
+        <h6>도서평점</h6>
+
+        <input type="radio"></input>
+        <span class="fa fa-star checked"></span>
+
+        <input type="radio"></input>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+
+        <input type="radio" checked></input>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+
+        <input type="radio"></input>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+
+        <input type="radio"></input>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+
+        <h6>내용</h6>
+        <textarea name="textfield" rows="2000"></textarea>
+        <button>등록하기</button>
+      </div>
+
+      <div class="review">
+        <table class="reviewtable">                            
+          <tr>
+            <th>5</th>
+            <td>제대로 된 글을 써보고 싶다는 생각을 한 번이라도 해 본 사람이라면 가슴을 뜨끔하게 만드는 제목에 홀리듯 읽기 시작했다.</td>
+            <td>pearl0***</td>
+            <td>2021.12.25</td>
+            <td><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span></td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>이제는 하나의 브랜드가 된 작가 유은정의 글쓰기의 어려움에 대한 허심탄회한 고백이라고 할 수 있다.</td>
+            <td>skuuk***</td>
+            <td>2021.11.21</td>
+            <td><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span></td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>작가 자신이 평소 가지고 있는 마인드와 작법 팁을 전달하고 있어요. 엄마랑 같이 읽고 있는데 좋습니다.</td>
+            <td>dlwl***</td>
+            <td>2021.09.24</td>
+            <td><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span></td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>어떻게 나를 알고 관계할 수 있는지 생각할 수 있게 하는 책 같아요.</td>
+            <td>xeeso***</td>
+            <td>2021.08.01</td>
+            <td><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span></td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>모든 삶의 영역에 균형을 이루어야 한다. 글을 깔끔하게 잘 쓰셔서 잘 읽히고, 실전에 잘 쓰일 것 같습니다.</td>
+            <td>kyo1***</td>
+            <td>2021.07.15</td>
+            <td><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer 시작 -->
+  <div class="footer">
+    <div class="footertop">
+      <ul>
+        <li><a href="https://www.ypbooks.co.kr/helper.yp?targetpage=helper_greeting">회사소개</a></li>
+        <li><a href="https://www.ypbooks.co.kr/helper.yp?targetpage=helper_ad">광고안내</a></li>
+        <li><a href="https://www.ypbooks.co.kr/customer_center.yp">고객센터</a></li>
+        <li><a href="https://www.ypbooks.co.kr/helper.yp?targetpage=helper_withdrawal">청약철회</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/spmail/spmailto.jsp">입점문의</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/member/member_agreement_view.jsp">이용약관</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/member/member_user_information_handling_view.jsp">개인정보처리방침</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/member/member_user_information_cctv.jsp">영상정보관리방침</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/event/maintema/refusal_email.jsp">이메일 무단 수집거부</a></li>
+      </ul>
+    </div>
+
+    <div class="footerbottom">
+      <div class="yp"><img src="img/yp.png"></div>
+      <div class="write">
+        <p>
+          회사명 : (주)영풍문고 ㅣ대표이사 : 최영일<br>
+          소재지 : 서울특별시 강남구 강남대로 542번지 (우)06110<br>
+          사업자 등록번호 : 773-86-01800 ㅣ 통신판매업 신고번호 : 2020-서울강남-01007 [ 사업자정보확인 ]<br>
+          개인정보관리 책임자 : 조순제 ㅣ E-mail : customer@ypbooks.co.kr ㅣ 대량주문 : 02-519-2860<br>
+          COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+      <div class="button">
+        <button class="scm"><a href="https://ypscm.ypbooks.co.kr/">
+          출판사용 통합관리 시스템<br>
+          <span>SCM</span></a>
+        </button>
+        <button class="service">
+          고객센터<br>
+          <span>1544 - 9020</span>
+        </button>
+      </div>
+    </div>
+  </div> <!-- footer 끝 -->
+  </div>
+
+  <script>
+     var mybutton = document.getElementById("myBtn");
+
+      // 사용자가 문서 상단에서 20px 아래로 스크롤하면 버튼이 표시됨
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // 사용자가 버튼을 클릭하면 문서 상단으로 스크롤
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+  </script>
+  
+  <script>
+	  // 모달 가져오기
+      var modal = document.getElementById("myModal");
+
+      // 모달을 여는 버튼 가져오기
+      var btn = document.getElementById("modalBtn");
+
+      // 모달을 닫는 <span> 요소를 가져옴
+      var span = document.getElementsByClassName("close")[0];
+
+      // 버튼을 클릭하면 모달을 엽니다 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // <span>(x)을 클릭하면 모달을 닫습니다
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // 모달 외부의 아무 곳이나 클릭하면 닫습니다
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+  </script>
+  
+  <script>
+      // 사용자가 div를 클릭하면 팝업이 열립니다.
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+  </script>
+  
+  <script>
+      var coll = document.getElementsByClassName("collapsible1");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+  </script>
+  
+  <script>
+      var coll = document.getElementsByClassName("collapsible2");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+  </script>
+</body>
+</html>

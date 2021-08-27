@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+* {margin:0; box-sizing:border-box;}
+    ul, ol, li {list-style:none; margin:0; padding:0;}
+
+    #wrap {width:100%; height:auto; margin:0 auto; box-sizing:border-box;}
+
+    /*top button*/
+    #myBtn {display:none; position:fixed; bottom:20px; right:30px; z-index:99; font-size:20px; border:none; outline:none; background-color:#BFB7AD; color:white; cursor:pointer; padding:15px; font-weight:bold; font-family: 'Kanit', sans-serif;}
+    #myBtn:hover {background-color:#555;}
+    #myBtn > i {color:#8A8278; padding-bottom:5px; font-size:25px;}
+
+    /*header*/
+    #wrap > .header {width:100%; height:300px; display:flex; flex-direction:column;}
+
+    #wrap > .header > .topbanner {width:100%; height:70px; display:flex; flex-direction:row; cursor:pointer;}
+    #wrap > .header > .topbanner > .left {width:50%; height:100%; background-color:#FC6826;}
+    #wrap > .header > .topbanner > .left > img {float:right;}
+    #wrap > .header > .topbanner > .right {width:50%; height:100%; background-color:#B0E6F0;}
+
+    #wrap > .header > .top {width:1260px; height:75px; margin:0 auto; display:flex; align-items:center; justify-content:flex-end;}
+    #wrap > .header > .top > ul {float:right; margin-right:30px;}
+    #wrap > .header > .top > ul > li {float:left; padding-right:5px; padding-left:5px; font-size:13px;}
+    #wrap > .header > .top > ul > li > a {text-decoration:none; color:#404040; font-size:13px;}
+    #wrap > .header > .top > ul > li > a:hover {text-decoration:underline; color:#285a35;}
+
+    #wrap > .header > .middle {width:1260px; height:120px; margin:0 auto; display:flex; flex-direction:row;}
+    #wrap > .header > .middle > .logo {width:30%; height:100%;}
+    #wrap > .header > .middle > .logo > a > img {padding:20px 0px 0px 40px;}
+
+    #wrap > .header > .middle > .search {width:50%; height:100%; display:flex; flex-direction:row; align-items:center;}
+
+    .select {overflow:hidden; width:115px; margin-left:55px;}
+    .select a {float:left; font-size:16px; text-align:center; padding:14px 16px; text-decoration:none;}
+
+    .dropdown {float:left; overflow:hidden;}
+    .dropdown .dropbtn {font-size:16px; border:none; padding:14px 16px; margin:0; border:1px solid #285a35; border-radius:15px; color:#285a35; background-color:#fff;}
+
+    .select a:hover, .dropdown:hover .dropbtn {text-decoration:underline; cursor:pointer;}
+
+    .dropmenu {display:none; position:absolute; background-color:#f9f9f9; width:113px; z-index:1; border:1px solid #285a35; border-radius:15px;}
+    .dropmenu a {float:none; color:#285a35; padding:12px 16px; text-decoration:none; display:block; text-align:left;}
+    .dropmenu a:hover {background-color:#ddd; border-radius:15px;}
+
+    .dropdown:hover .dropmenu {display:block;}
+
+    #wrap > .header > .middle > .search > input {width:350px; height:53px; border:1px solid #285a35; border-radius:15px;}
+    #wrap > .header > .middle > .search > i {font-size:35px; background-color:#285a35; color:#fff; width:50px; height:53px; padding:7px 0px 0px 7px; cursor:pointer; border-radius:15px; margin-left:3px;}
+
+    #wrap > .header > .middle > .mini {width:200px; height:100px; position:relative; left:50px; right:0%; overflow:hidden;}
+    #wrap > .header > .middle > .mini > i {position:absolute; z-index:2;}
+
+    #wrap > .header > .middle > .mini > .minibanner {width:600px;}
+    #wrap > .header > .middle > .mini > .minibanner > li {width:200px; height:100px; float:left;}
+    #wrap > .header > .middle > .mini > .minibanner > li > img {width:100%; height:100%; cursor:pointer;}
+
+    #wrap > .header > .menu {width:1260px; height:105px; margin:0 auto; display:flex; align-items:flex-end;}
+    #wrap > .header > .menu > ul > li {float:left; border:none; width:126px; height:70px; text-align:center; padding-top:25px; font-weight:bold; color:#285A34; cursor:pointer;}
+    #wrap > .header > .menu > ul > li > a {text-decoration:none; font-weight:bold; color:#285A34;}
+    #wrap > .header > .menu > ul > li:hover {background-color:#e6e6e6;}
+
+    #wrap > .footer {width:100%; height:300px; background-color:#f5f5f5;}
+
+    #wrap > .footer > .footertop {width:100%; height:20%; border-bottom:1px solid #ccc;}
+    #wrap > .footer > .footertop > ul {width:1260px; height:20%; margin:0 auto;}
+    #wrap > .footer > .footertop > ul > li {float:left; padding:20px 31px 0px 31px; font-size:14px; color:gray;}
+    #wrap > .footer > .footertop > ul > li > a {color:#595959; text-decoration:none;}
+    #wrap > .footer > .footertop > ul > li > a:hover {color:#285A35; text-decoration:underline;}
+
+    #wrap > .footer > .footerbottom {width:1260px; height:80%; margin:0 auto; display:flex; flex-direction:row;}
+    #wrap > .footer > .footerbottom > .yp {width:20%; height:100%;}
+    #wrap > .footer > .footerbottom > .yp > img {padding:70px;}
+
+    #wrap > .footer > .footerbottom > .write {width:60%; height:100%;}
+    #wrap > .footer > .footerbottom > .write p {font-size:15px; color:gray; padding:40px 0px 0px 30px; line-height:25px;}
+
+    #wrap > .footer > .footerbottom > .button {width:20%; height:100%;}
+
+    #wrap > .footer > .footerbottom > .button > .scm {width:70%; height:25%; background-color:#000; color:#fff; border:none; margin:50px 0px 0px 35px; box-shadow:4px 4px 4px #999;}
+    #wrap > .footer > .footerbottom > .button > .scm > span {font-weight:bold; font-size:17px;}
+    #wrap > .footer > .footerbottom > .button > .scm > a {color:#fff; text-decoration:none;}
+
+    #wrap > .footer > .footerbottom > .button > .service {width:70%; height:25%; background-color:#ccc; border:none; margin:10px 0px 0px 35px; box-shadow:4px 4px 4px #999; font-size:15px;}
+    #wrap > .footer > .footerbottom > .button > .service > span {font-weight:bold; font-size:17px;}

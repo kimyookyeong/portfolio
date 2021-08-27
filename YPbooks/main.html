@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<head>
+  <title>영풍문고</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <script
+          src="https://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+          crossorigin="anonymous"></script>
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+  <script src="js/top_button.js"></script>
+  <script src="js/minibanner.js"></script>
+  <script src="js/sidebanner.js"></script>
+  <script src="js/slide_main.js"></script>
+  <script src="js/new_booklist.js"></script>
+
+  <script src="js/api_slider_side.js"></script>
+  <script src="js/api_new.js"></script>
+  <script src="js/api_banner.js"></script>
+  <script src="js/api_best.js"></script>
+  <script src="js/api_theme.js"></script>
+  <script src="js/api_theme1.js"></script>
+  <script src="js/api_sale.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+	<!-- TOP 버튼 -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="far fa-arrow-alt-circle-up"></i><br>Top
+    </button>
+	
+	<!-- header 시작 -->
+    <div class="header">
+      <div class="topbanner"> <!-- 최상단 광고 배너 -->
+        <div class="left"><img src="img/topb1.jpg"></div>
+        <div class="right"><img src="img/topb2.jpg"></div>
+      </div>
+
+      <div class="top">
+        <ul>
+          <li><a href="https://www.ypbooks.co.kr/login.yp?pageflag=myinfo">My page</a></li>
+          <li> | </li>
+          <li><a href="https://www.ypbooks.co.kr/login.yp">Login</a></li>
+          <li> | </li>
+          <li><a href="https://www.ypbooks.co.kr/member.yp">Sign Up</a></li>
+          <li> | </li>
+          <li><a href="https://www.ypbooks.co.kr/cart.yp">Cart</a></li>
+          <li> | </li>
+          <li><a href="https://www.ypbooks.co.kr/customer_center.yp">Service</a></li>
+        </ul>
+      </div>
+
+      <div class="middle">
+        <div class="logo"><a href="main.html"><img src="img/logo.png"></a></div>
+
+        <div class="search">
+          <div class="select">
+            <div class="dropdown">
+              <button class="dropbtn">통합검색 
+                <i class="fa fa-caret-down"></i>
+              </button>
+
+              <div class="dropmenu">
+                <a href="#">국내도서</a>
+                <a href="#">서양도서</a>
+                <a href="#">일본도서</a>
+                <a href="#">E-Book</a>
+                <a href="#">독자서평</a>
+                <a href="#">도서명</a>
+                <a href="#">저자명</a>
+                <a href="#">출판사명</a>
+              </div>
+            </div>
+          </div>
+
+          <input type="textbox"></input>
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div class="mini"> <!-- 왼쪽으로 슬라이드되는 미니배너 -->
+        <ul class="minibanner">
+          <li><img src="img/small1.png"></li>
+          <li><img src="img/small2.png"></li>
+          <li><img src="img/small3.png"></li>
+        </ul>
+        <i class="far fa-caret-square-left"></i>
+        <i class="far fa-caret-square-right"></i>
+      </div>
+    </div>
+
+    <div class="menu">
+      <ul>
+        <li><a href="sub.html">베스트도서</a></li>
+        <li><a href="sub.html">신간도서</a></li>
+        <li><a href="sub.html">국내도서</a></li>
+        <li><a href="sub.html">외국도서</a></li>
+        <li><a href="sub.html">이벤트</a></li>
+        <li><a href="sub.html">기획/테마</a></li>
+        <li><a href="sub.html">문화행사</a></li>
+        <li><a href="sub.html">기프티콘</a></li>
+        <li><a href="sub.html">회원혜택</a></li>
+        <li><a href="sub.html">출석체크</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- header 끝 -->
+
+  <div class="main">
+    <div id="mySideb" class="sideb"> <!-- 왼쪽 사이드 배너 -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <i class="fas fa-info-circle"></i> &times;
+      </a>
+      <img src="img/side.jpg">
+    </div>
+
+    <div id="side">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <i class="fas fa-angle-right"></i>
+      </span>
+    </div>
+	
+	<!-- slider 시작 -->
+    <div id="slider">
+      <div class="contents_box">
+        <div id="slider_main">
+          <div class="slider_main_1box">
+            <img src="img/slide1.png">
+          </div>
+          <div class="slider_main_1box">
+            <img src="img/slide2.png">
+          </div>
+          <div class="slider_main_1box">
+            <img src="img/slide3.png">
+          </div>
+          <div class="slider_main_1box">
+            <img src="img/slide4.png">
+          </div>                    
+          <div class="slider_main_1box">
+            <img src="img/slide5.png">
+          </div>
+          <div class="slider_main_1box">
+            <img src="img/slide6.png">
+          </div>
+        </div>
+
+        <div id="slider_side">
+          <div id="slider_side_top">
+            <h5>TOP 1 <span> 광고 <i class="far fa-question-circle"></i></span></h5>
+            <div id="slider_side_box"></div>
+          </div>
+        </div>     
+
+        <div id="slider_btn">
+          <ul>
+            <li class="slider_btn_hover">요즘 이 책</li>
+            <li>핫이슈</li>
+            <li>EVENT</li>
+            <li>기획/테마</li>
+            <li>한정특가</li>
+            <li>STORE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	<!-- slider 끝 -->
+
+    <div class="banner">
+      <h5>Book of the Day</h5>
+      <div class="today">
+        <div class="todaybox">
+          <div class="imgbox"></div>
+          <div class="textbox"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new">
+      <ul class="booklist">
+        <li>MD 추천도서</li>
+        <li>화제의 신간</li>
+        <li>스테디셀러</li>
+      </ul>
+
+      <h6 class="titlelist">MD 추천도서</h6>
+
+      <article class="list_a">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </article>
+
+      <article class="list_b">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </article>
+
+      <article class="list_c">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </article>
+    </div>
+
+    <div class="best">
+      <h5>Weekly Best</h5>
+      <div class="bestbox">
+        <div class="bbox"></div>
+        <div class="bbox"></div>
+        <div class="bbox"></div>
+        <div class="bbox"></div>
+        <div class="bbox"></div>
+      </div>
+    </div>
+
+    <div class="theme">
+      <h5>Book by Theme</h5>
+      <div class="themebox">
+        <div class="bill">
+          <p><a href="#">· 빌게이츠 여름 추천도서</a></p>
+          <div class="billbox">
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+          </div>
+        </div>
+
+        <div class="kim">
+          <p><a href="#">· 김영하 북클럽 추천도서</a></p>
+          <div class="kimbox">
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sale">
+      <h5>Discount Book</h5>
+      <div class="salebox">
+        <div class="box3">
+          <div class="pbox"></div>
+          <div class="tbox"></div>
+        </div>
+        <div class="box3">
+          <div class="pbox"></div>
+          <div class="tbox"></div>
+        </div>
+        <div class="box3">
+          <div class="pbox"></div>
+          <div class="tbox"></div>
+        </div>
+        <div class="box3">
+          <div class="pbox"></div>
+          <div class="tbox"></div>
+        </div>
+        <div class="box3">
+          <div class="pbox"></div>
+          <div class="tbox"></div>
+        </div>
+        <div class="box3">
+          <div class="pbox"></div>
+          <div class="tbox"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icon">
+      <div class="iconbox"><a href="https://www.ypbooks.co.kr/ypbooks/event/maintema/evt_quickBook2014.jsp"><img src="img/icon1.jpg"><h2>Now Dream</h2></a></div>
+      <div class="iconbox"><a href="https://www.ypbooks.co.kr/ypbooks/event/maintema/gifticon.jsp"><img src="img/icon2.jpg"><h2>Gift Card</h2></a></div>
+      <div class="iconbox"><a href="https://www.ypbooks.co.kr/customer_center.yp?targetpage=notice_list"><img src="img/icon3.jpg"><h2>Notice</h2></a></div>
+      <div class="iconbox"><a href="https://www.ypbooks.co.kr/helper.yp?targetpage=helper_branch"><img src="img/icon4.jpg"><h2>Store</h2></a></div>
+      <div class="iconbox"><a href="https://www.ypbooks.co.kr/customer_center.yp"><img src="img/icon5.jpg"><h2>Service</h2></a></div>
+      <div class="iconbox"><a href="https://www.ypbooks.co.kr/event_view.yp?HTMLPage=https://pub.ypbooks.co.kr/ypbooks/event/maintema/mainthema.jsp?evt_no=587"><img src="img/icon6.jpg"><h2>News</h2></a></div>
+      <div class="iconbox"><a href="https://www.ypbooks.co.kr/ypbooks_mobile/event/event_daily_login.jsp"><img src="img/icon7.jpg"><h2>Event</h2></a></div>
+    </div>
+  </div>
+
+  <!-- footer 시작 -->
+  <div class="footer">
+    <div class="footertop">
+      <ul>
+        <li><a href="https://www.ypbooks.co.kr/helper.yp?targetpage=helper_greeting">회사소개</a></li>
+        <li><a href="https://www.ypbooks.co.kr/helper.yp?targetpage=helper_ad">광고안내</a></li>
+        <li><a href="https://www.ypbooks.co.kr/customer_center.yp">고객센터</a></li>
+        <li><a href="https://www.ypbooks.co.kr/helper.yp?targetpage=helper_withdrawal">청약철회</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/spmail/spmailto.jsp">입점문의</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/member/member_agreement_view.jsp">이용약관</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/member/member_user_information_handling_view.jsp">개인정보처리방침</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/member/member_user_information_cctv.jsp">영상정보관리방침</a></li>
+        <li><a href="https://www.ypbooks.co.kr/ypbooks/event/maintema/refusal_email.jsp">이메일 무단 수집거부</a></li>
+      </ul>
+    </div>
+
+    <div class="footerbottom">
+      <div class="yp"><img src="img/yp.png"></div>
+      <div class="write">
+        <p>
+          회사명 : (주)영풍문고 ㅣ대표이사 : 최영일<br>
+          소재지 : 서울특별시 강남구 강남대로 542번지 (우)06110<br>
+          사업자 등록번호 : 773-86-01800 ㅣ 통신판매업 신고번호 : 2020-서울강남-01007 [ 사업자정보확인 ]<br>
+          개인정보관리 책임자 : 조순제 ㅣ E-mail : customer@ypbooks.co.kr ㅣ 대량주문 : 02-519-2860<br>
+          COPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+      <div class="button">
+        <button class="scm"><a href="https://ypscm.ypbooks.co.kr/">
+          출판사용 통합관리 시스템<br>
+          <span>SCM</span></a>
+        </button>
+        <button class="service">
+          고객센터<br>
+          <span>1544 - 9020</span>
+        </button>
+      </div>
+    </div>
+  </div> <!-- footer 끝 -->
+  </div>
+</body>
+<script>
+      var mybutton = document.getElementById("myBtn");
+
+      // 사용자가 문서 상단에서 20px 아래로 스크롤하면 버튼이 표시됨
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // 사용자가 버튼을 클릭하면 문서 상단으로 스크롤
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+</script>
+</html>
