@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+
+      #slidewrap {width:100%; height:750px; margin:0 auto; position:relative; overflow:hidden;}
+      #slidewrap > ul, li, ol {list-style:none; margin:0; padding:0;}
+
+      #slidewrap > .slide {width:100%;}
+      #slidewrap > .slide li {width:100%; height:750px; float:left;}
+      #slidewrap > .slide li img {width:100%; height:100%;}
+      
+      #slidewrap > span {position:absolute; top:50%; display:block; font-size:35px; color:#fff; line-height:40px; background:rgba(0,0,0,0.6); cursor:pointer; height:50px; transform:translateY(-50%);}
+      #slidewrap > span: hover {background:rgba(255,255,255,0.8); color:#000;}
+
+      #slidewrap > .prev {left:0; border-radius:0 10px 10px 0px; padding:10px;}
+      #slidewrap > .next {right:0; border-radius:10px 0px 0px 10px; padding:10px;}
+      
+      
+      
+      #banner1 {width:1260px; height:300px; margin:0 auto; padding:70px 0px 0px 0px;}
+      
+      #banner1 > .box {width:400px; height:250px; float:right;  box-sizing:border-box;  background-repeat:no-repeat; background-size:cover; margin:10px; padding:30px;}
+      
+      #banner1 > .box > img {width:100%; height:100%; box-sizing:border-box;}
+      
+      #banner1 > div:nth-of-type(5) {margin:0 auto; float:left;}
+      
+      #banner1 > .bg1 {background-image:url("img/b2.jpg");}
+      #banner1 > .bg2 {background-image:url("img/b1.jpg");}
+      #banner1 > .bg3 {background-image:url("img/b3.jpg");}
+
+      #banner1 > .box > h3 > a {text-decoration:none;} 
+      #banner1 > .box > h3 {margin:10px 0 0 0px; font-size:17px; float:left; padding:10px; font-family: 'Poppins', sans-serif;}
+
+      #banner1 > .box:nth-child(1) > h3 > a {color:#000;}
+      #banner1 > .box:nth-child(2) > h3 > a {color:#000;}
+      #banner1 > .box:nth-child(3) > h3 > a {color:#000;}
+
+      #banner1 > .box > .btn1 {background-color:#ff6600; color: white; padding:7px 10px;  text-align: center; margin:20px 275px 0px 0px; cursor:pointer; font-size:15px; border-radius:10px; display:inline-block; float:right;}
+      #banner1 > .box > .btn1:hover {background-color:#f2f2f2; color:#fff;}
+
+      #banner1 > .box > .btn2 {background-color:#ff6600;  color: #fff;  padding:7px 10px; text-align: center; margin:20px 275px 0px 0px; cursor:pointer; font-size:15px; border-radius:10px; display:inline-block; float:right;}
+      #banner1 > .box > .btn2:hover {background-color:#f2f2f2; color:#fff;}
+      
+      #banner1 > .box > .btn3 {background-color:#ff6600; color: white; padding:7px 10px; text-align: center; margin:95px 0px 0px -115px; cursor:pointer; font-size:15px; border-radius:10px; display:inline-block; float:left;}
+      #banner1 > .box > .btn3:hover {background-color:#f2f2f2; color:#fff;}
+      
+      
+      
+      #best {width:1260px; height:950px; margin:0 auto;}
+      #best > h3 {font-size:20px; text-align:center; font-family: 'Poppins', sans-serif; padding:30px 0;}
+
+      #best > section {width:1250px; height:840px;}
+      
+      #best > section >.box11 {width:237px; height:237px; float:left; margin:0px 10px 200px 5px;}
+      #best > section >.box11 > a > img {width:100%; height:100%;}
+      #best > section >.box11:nth-of-type(5n) {margin:0px 0px 200px 0px; float:right;}
+
+      #best > section >.box11 > h4 {font-size:13px; font-family: 'Poppins', sans-serif; margin:10px 0; color:#000;}
+      #best > section >.box11 > h4 > a{text-decoration:none; color:#000;}
+      
+      #best > section >.box11 > p {font-size:12px; color:gray; margin:10px 0px 0px 0px; line-height:16px; text-decoration-line:line-through; font-family: 'Poppins', sans-serif;}
+      
+      #best > section >.box11 > span {color:#000; font-size:13px; font-family: 'Poppins', sans-serif;}
+      #best > section >.box11 > span > a {color:black; text-decoration:none;}
+
+
+
+      #new {width:1260px; height:950px; margin:0 auto;}
+      #new > h3 {font-size:20px; text-align:center; font-family: 'Poppins', sans-serif; padding:30px 0;}
+
+      #new > section {width:1250px; height:840px;}
+      
+      #new > section >.box1 {width:237px; height:237px; float:left; margin:0px 10px 200px 5px;}
+      #new > section >.box1 > a > img {width:100%; height:100%;}
+      #new > section >.box1:nth-of-type(5n) {margin:0px 0px 200px 0px; float:right;}
+
+      #new > section >.box1 > h4 {font-size:13px; font-family: 'Poppins', sans-serif; margin:10px 0; color:#000;}
+      #new > section >.box1 > h4 > a{text-decoration:none; color:#000;}
+      
+      #new > section >.box1 > p {font-size:12px; color:gray; margin:10px 0px 0px 0px; line-height:16px; text-decoration-line:line-through; font-family: 'Poppins', sans-serif;}
+      
+      #new > section >.box1 > span {color:#000; font-size:13px; font-family: 'Poppins', sans-serif;}
+      #new > section >.box1 > span > a {color:black; text-decoration:none;}
+      
+      
+      
+      #today {width:100%; height:300px; background-color:#eee; margin:0 auto;}
+      #today > .day {width:1260px; height:300px; margin:0 auto;}
+      #today > .day > .todaybox { width:200px; height:150px; float: left; margin:50px 0 0 30px;}
+      #today > .day > .todaybox > h3 {text-align:left; font-size:20px; display:inline-block;  color:#cc3300; font-family: 'Poppins', sans-serif;}
+      #today > .day > .todaybox > h3 > a {text-decoration:none; color:#cc3300;}
+      #today > .day > .todaybox > p {text-align:left; font-size:15px; display:inline-block; font-family: 'Poppins', sans-serif;}
+      #today > .day > .todaybox > p > span {color:red;}
+      #today > .day > .todaybox > p > strike {color:gray;}
+     
+      #today > .day > .box {width:250px; height:200px; float:right; margin: 50px 30px 0 0px; box-sizing:border-box;}
+      #today > .day > .box > img {width:100%; height:100%; box-sizing:border-box;}
+
+      #today > .day > .todaybox > #timer {text-align:left; font-size:19px; font-weight:bold; display:inline-block; font-family: 'Poppins', sans-serif; background-color:#E19474; color:#fff; padding:5px 10px;}
+      
+      
+      
+      #banner2 {width:1260px; height:300px; margin:0 auto; padding:70px 0px 0px 0px;}
+      
+      #banner2 > .box {width:400px; height:250px; float:right;  box-sizing:border-box;  background-repeat:no-repeat; background-size:cover; margin:10px; padding:30px;}
+      
+      #banner2 > .box > img {width:100%; height:100%; box-sizing:border-box;}
+      
+      #banner2 > div:nth-of-type(5) {margin:0 auto; float:left;}
+      
+      #banner2 > .bg4 {background-image:url("img/b4.jpg");}
+      #banner2 > .bg5 {background-image:url("img/b5.jpg");}
+      #banner2 > .bg6 {background-image:url("img/b6.jpg");}
+
+      #banner2 > .box > h3 > a {text-decoration:none;} 
+      #banner2 > .box > h3 {margin:10px 0 0 0px; font-size:17px; float:left; padding:10px; font-family: 'Poppins', sans-serif;}
+      #banner2 > .box > p {font-size:12px; float:left; padding:10px; margin:0 auto; font-family: 'Poppins', sans-serif;}
+      #banner2 > .box > p:hover{text-decoration:underline;}
+
+      #banner2 > .box:nth-child(1) > h3 > a {color:#000;}
+      #banner2 > .box:nth-child(2) > h3 > a {color:#000;}
+      #banner2 > .box:nth-child(3) > h3 > a {color:#000;}
+
+      #banner2 > .box > .btn4 {background-color:#ff6600; color:#fff; padding:5px; text-align:center; margin:55px 245px 0px 0px; cursor:pointer; font-size:15px; border-radius:10px; display:inline-block; float:right;}
+      #banner2 > .box > .btn4:hover {background-color:#f2f2f2; color:#fff;}
+
+      #banner2 > .box > .btn5 {background-color:#ff6600;  color:#fff;  padding:5px; text-align:center; margin:42px 245px 0px 0px; cursor:pointer; font-size:15px; border-radius:10px; display:inline-block; float:right;}
+      #banner2 > .box > .btn5:hover {background-color:#f2f2f2; color:#fff;}
+      
+      
+      
+      #fashion {width:1260px; height:950px; margin:0 auto;}
+      #fashion > h3 {font-size:20px; text-align:left; font-family: 'Poppins', sans-serif; padding:30px 0px 30px 5px;}
+      
+      .all1 > ul,li {list-style:none;}
+      .all1 {float:right; margin:-75px 10px 0px 0px;}
+      .all1 ul {font-size:13px; color:#666; font-family: 'Poppins', sans-serif;}
+      .all1 li {float:left; margin:0 5px;}
+      .all1 .lired > a {color:red;}
+      .all1 li a {text-decoration:none; color:#666;}
+
+      #fashion > section {width:1250px; height:840px;}
+      
+      #fashion > section >.box2 {width:237px; height:237px; float:left; margin:0px 10px 200px 5px;}
+      #fashion > section >.box2 > a > img {width:100%; height:100%;}
+      #fashion > section >.box2:nth-of-type(5n) {margin:0px 0px 200px 0px; float:right;}
+
+      #fashion > section >.box2 > h4 {font-size:13px; font-family: 'Poppins', sans-serif; margin:10px 0; color:#000;}
+      #fashion > section >.box2 > h4 > a{text-decoration:none; color:#000;}
+      
+      #fashion > section >.box2 > p {font-size:12px; color:gray; margin:10px 0px 0px 0px; line-height:16px; text-decoration-line:line-through; font-family: 'Poppins', sans-serif;}
+      
+      #fashion > section >.box2 > span {color:#000; font-size:13px; font-family: 'Poppins', sans-serif;}
+      #fashion > section >.box2 > span > a {color:black; text-decoration:none;}
+
+
+
+      #living {width:1260px; height:950px; margin:0 auto;}
+      #living > h3 {font-size:20px; text-align:left; font-family: 'Poppins', sans-serif; padding:30px 0px 30px 5px;}
+      
+      .all2 > ul,li {list-style:none;}
+      .all2 {float:right; margin:-75px 10px 0px 0px;}
+      .all2 ul {font-size:13px; color:#666; font-family: 'Poppins', sans-serif;}
+      .all2 li {float:left; margin:0 5px;}
+      .all2 .lired > a {color:red;}
+      .all2 li a {text-decoration:none; color:#666;}
+
+      #living > section {width:1250px; height:840px;}
+      
+      #living > section >.box3 {width:237px; height:237px; float:left; margin:0px 10px 200px 5px;}
+      #living > section >.box3 > a > img {width:100%; height:100%;}
+      #living > section >.box3:nth-of-type(5n) {margin:0px 0px 200px 0px; float:right;}
+
+      #living > section >.box3 > h4 {font-size:13px; font-family: 'Poppins', sans-serif; margin:10px 0; color:#000;}
+      #living > section >.box3 > h4 > a{text-decoration:none; color:#000;}
+      
+      #living > section >.box3 > p {font-size:12px; color:gray; margin:10px 0px 0px 0px; line-height:16px; text-decoration-line:line-through; font-family: 'Poppins', sans-serif;}
+      
+      #living > section >.box3 > span {color:#000; font-size:13px; font-family: 'Poppins', sans-serif;}
+      #living > section >.box3 > span > a {color:black; text-decoration:none;}
+
+
+
+      #toy {width:1260px; height:950px; margin:0 auto;}
+      #toy > h3 {font-size:20px; text-align:left; font-family: 'Poppins', sans-serif; padding:30px 0px 30px 5px;}
+      
+      .all3 > ul,li {list-style:none;}
+      .all3 {float:right; margin:-75px 10px 0px 0px;}
+      .all3 ul {font-size:13px; color:#666; font-family: 'Poppins', sans-serif;}
+      .all3 li {float:left; margin:0 5px;}
+      .all3 .lired > a {color:red;}
+      .all3 li a {text-decoration:none; color:#666;}
+
+      #toy > section {width:1250px; height:840px;}
+      
+      #toy > section >.box4 {width:237px; height:237px; float:left; margin:0px 10px 200px 5px;}
+      #toy > section >.box4 > a > img {width:100%; height:100%;}
+      #toy > section >.box4:nth-of-type(5n) {margin:0px 0px 200px 0px; float:right;}
+
+      #toy > section >.box4 > h4 {font-size:13px; font-family: 'Poppins', sans-serif; margin:10px 0; color:#000;}
+      #toy > section >.box4 > h4 > a{text-decoration:none; color:#000;}
+      
+      #toy > section >.box4 > p {font-size:12px; color:gray; margin:10px 0px 0px 0px; line-height:16px; text-decoration-line:line-through; font-family: 'Poppins', sans-serif;}
+      
+      #toy > section >.box4 > span {color:#000; font-size:13px; font-family: 'Poppins', sans-serif;}
+      #toy > section >.box4 > span > a {color:black; text-decoration:none;}
+      
+      
+      
+      
+      #offline {width:100%; height:300px; background-color:#eee; margin:0 auto;}
+      #offline > .off {width:1260px; height:300px; margin:0 auto;}
+      #offline > .off > .offbox { width:350px; height:150px; float: left; margin:50px 0 0 30px;}
+      #offline > .off > .offbox > h3 {text-align:left; font-size:20px; display:inline-block;  color:#cc3300; font-family: 'Poppins', sans-serif;}
+      #offline > .off > .offbox > h3 > a {color:#cc3300; text-decoration:none;}
+      #offline > .off > .offbox > p {text-align:left; font-size:15px; display:inline-block; font-family: 'Poppins', sans-serif;}
+      #offline > .off > .offbox > p > span {color:red;}
+      #offline > .off > .offbox > p > strike {color:gray;}
+      #offline > .off > .box {width:250px; height:200px; float:right; margin: 50px 30px 0 0px; box-sizing:border-box;}
+      #offline > .off > .box > img {width:100%; height:100%; box-sizing:border-box;}
+      
+      
+      
+      #review {width:1260px; height:700px; margin:50px auto 0px; box-sizing:border-box;}
+      #review  > h3 {font-size:18px; color:#cc3300; text-align:center; font-family: 'Poppins', sans-serif;}
+
+      #review  > .box {width:270px; height:270px; float:left; padding:10px; margin:20px; box-sizing:border-box; overflow:hidden; position:relative; cursor:pointer; display:inline-block;}
+      #review > .box span {color:#fff;  margin:40px 0 0 0px; font-weight:bold; font-size:14px; line-height:200%; position:absolute; top:130px; left:0; display:inline-block; text-align:center; width:100%; color:rgba(255, 255, 255, 0); font-family: 'Poppins', sans-serif;}
+      #review > .box > img {width:100%; height:100%;}
+      #review > div:nth-of-type(4n) {margin:20px; float:center;}
+      
+      #review  > .box > .textbox {float:left; width:100%; height:100%; background-color:black; background-color:rgba(0, 0, 0, 0);  transition:all 0.5s ease; position:absolute; top:0; left:0;}
+      #review  > .box > .textbox:hover {background-color:rgba(0, 0, 0, 0.6);}
+      #review  > .box > .textbox:hover span {color:rgba(255, 255, 255, 1);}
+      
+      
+      
+      #insta {width:1260px; height:450px; margin:50px auto 0px; box-sizing:border-box;}
+      #insta  > h3 {font-size:20px; color:#cc3300; text-align:center; font-family: 'Poppins', sans-serif;}
+      #insta  > p {font-size:15px; color:#000; text-align:center; font-family: 'Poppins', sans-serif;}
+      #insta  > .box {width:120px; height:120px; float:left; padding:10px; margin:10px; box-sizing:border-box;  border-radius:10px;}
+      #insta > .box > img {width:100%; height:100%; box-sizing:border-box; border-radius:10px;}
+      #insta > div:nth-of-type(9n) {margin:10px; float:center;}

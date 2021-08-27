@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+* {margin:0; box-sizing:border-box;}
+    ul, ol, li {list-style:none; margin:0; padding:0;}
+
+      header {width:100%; height:100px; display:flex; flex-direction:row; justify-content:space-between; align-items:center; border-bottom:1px solid #b2b2b2;}
+
+      header > .menu {width:350px; height:100%; display:flex; align-items:center;}
+      header > .menu > ul {margin-left:20px;}
+      header > .menu > ul > li {float:left; padding-right:20px;}
+      header > .menu > ul > li > a {text-decoration:none; color:#000; font-size:14px;}
+
+      header > .logo {width:350px; height:100%; display:flex; align-items:center;}
+      header > .logo > a {margin:0 auto;}
+      header > .logo > a > img {width:150px;}
+
+      header > .login {width:350px; height:100%; display:flex; align-items:center;}
+      header > .login > ul {margin-left:60px;}
+      header > .login > ul > li {float:left; padding-right:20px;}
+      header > .login > ul > li > a {text-decoration:none; color:#000; font-size:14px;}
+
+      section {width:100%; height:auto;}
+
+      #product {width:1260px; height:600px; margin:0 auto; display:flex; flex-direction:row; margin-top:50px;}
+
+      #product > .title {width:32.5%; height:590px;}
+
+      #product > .title > .titletop {width:90%; height:50%;}
+      #product > .title > .titletop > h1 {font-size:22px; font-family: 'Nanum Gothic', sans-serif;}
+      #product > .title > .titletop > h6 {line-height:75px; font-size:12px; font-family: 'Nanum Gothic', sans-serif;}
+      #product > .title > .titletop > p {font-size:13px; color:#999; font-family: 'Nanum Gothic', sans-serif; line-height:20px;}
+
+      #product > .title > .titlebottom {width:90%; height:50%; border-top:1px solid #ebebeb;}
+      #product > .title > .titlebottom > p {font-size:13px; color:#999; padding-top:100px; font-weight:bold; font-family: 'Nanum Gothic', sans-serif;}
+
+      #product > .image {width:35%; height:100%;}
+      #product > .image > img {width:95%; height:68%;}
+
+      #product > .price {width:32.5%; height:100%;}
+      #product > .price > .pricebox {width:90%; height:100%; float:right;}
+      #product > .price > .pricebox > h5 {font-size:16px; padding-bottom:45px; font-family: 'Nanum Gothic', sans-serif;}
+      #product > .price > .pricebox > h5 > span {color:#a10a0a; text-decoration:line-through;}
+
+      #product > .price > .pricebox > table {width:100%; height:20%; font-family: 'Nanum Gothic', sans-serif;}
+      #product > .price > .pricebox > table tr th {text-align:left; font-weight:normal;}
+      #product > .price > .pricebox > table tr td select {width:130px; height:30px; border:1px solid #ccc; cursor:pointer;}
+
+      #product > .price > .pricebox > button {width:100%; height:45px; border:none; cursor:pointer; font-family: 'Nanum Gothic', sans-serif;}
+      #product > .price > .pricebox > button:nth-of-type(1) {background-color:#f1a68e; margin:50px 0px 20px 0px; color:#fff;}
+      #product > .price > .pricebox > button:nth-of-type(2) {background-color:#fff; border:2px solid #f1a68e; margin-bottom:20px; color:#f1a68e;}
+      #product > .price > .pricebox > button:nth-of-type(3) {background-color:#f1a68e; color:#fff;}
+
+      #tab {width:1260px; height:100px; margin:0 auto;}
+      #tab > ul > li {float:left; width:33.2%; text-align:center;}
+      #tab > ul > li > a {text-decoration:none; color:#000; font-weight:bold; font-family: 'Nanum Gothic', sans-serif;}
+      #tab > ul > li > a:hover {text-decoration:underline;}
+
+      /* 상품 설명 글, 사진 */
+      #ex {width:1260px; height:auto; margin:0 auto;}
+      #ex > article {width:100%; height:8550px; display:flex; flex-direction:column; justify-content:space-around;}
+      #ex > article > .box {width:100%; height:800px; display:flex; flex-direction:column; justify-content:center;}
+      #ex > article > .box > img {width:80%; height:80%; margin:0 auto;}
+      #ex > article > .box > h3 {text-align:center; padding-top:30px; font-family: 'Nanum Gothic', sans-serif;}
+
+      #info {width:1260px; height:670px; margin:0 auto; display:flex; flex-wrap:wrap;}
+
+      #info > .size {width:50%; height:50%;}
+      #info > .size > h4 {text-align:center; font-family: 'Nanum Gothic', sans-serif;}
+      #info > .size > .sizebox {width:90%; height:75%; border:1px solid #ccc; margin:45px 0px 0px 30px; padding:20px;}
+      #info > .size > .sizebox > p {font-size:11px; color:#666; line-height:17px; font-family: 'Nanum Gothic', sans-serif;}
+
+      #info > .wash {width:50%; height:50%;}
+      #info > .wash > h4 {text-align:center; font-family: 'Nanum Gothic', sans-serif;}
+      #info > .wash > .washbox {width:90%; height:75%; border:1px solid #ccc; margin:45px 0px 0px 30px; padding:20px;}
+      #info > .wash > .washbox > p {font-size:11px; color:#666; line-height:17px; font-family: 'Nanum Gothic', sans-serif;}
+
+      #info > .delivery {width:50%; height:50%; margin-top:20px;}
+      #info > .delivery > h4 {text-align:center; font-family: 'Nanum Gothic', sans-serif;}
+      #info > .delivery > .deliverybox {width:90%; height:75%; border:1px solid #ccc; margin:45px 0px 0px 30px; padding:20px;}
+      #info > .delivery > .deliverybox > p {font-size:11px; color:#666; line-height:17px; font-family: 'Nanum Gothic', sans-serif;}
+
+      #info > .change {width:50%; height:50%; margin-top:20px;}
+      #info > .change > h4 {text-align:center; font-family: 'Nanum Gothic', sans-serif;}
+      #info > .change > .changebox {width:90%; height:75%; border:1px solid #ccc; margin:45px 0px 0px 30px; padding:20px;}
+      #info > .change > .changebox > p {font-size:11px; color:#666; line-height:17px; font-family: 'Nanum Gothic', sans-serif;}
+
+      #banner {width:1260px; height:350px; margin:0 auto; display:flex; justify-content:center; align-items:center;}
+      #banner > img {width:100%; height:170px;}
+
+      /* 문의게시판 */
+      #subject {width:1260px; height:400px; margin:0 auto;}
+      #subject > h3 {text-align:center; font-family: 'Nanum Gothic', sans-serif;}
+      #subject > table {width:100%; height:75%; padding-top:50px; font-family: 'Nanum Gothic', sans-serif;}
+
+      #subject > table th {text-align:center; border-bottom:1px solid #eee;}
+      #subject > table th:nth-of-type(1) {text-align:left; padding-left:2px;}
+      #subject > table th:nth-of-type(2) {width:93%; padding-left:40px;}
+      
+      #subject > table td {text-align:center; border-bottom:1px solid #eee; font-size:13px;}
+      #subject > table td:nth-of-type(1) {text-align:left;}
+      #subject > table td:nth-of-type(2) {width:93%; padding-left:40px; cursor:pointer;}
+      #subject > table td i {padding-right:10px;}
+
+      #subject > ul {margin-left:42%; margin-top:15px;}
+      #subject > ul > li {float:left; padding:0px 10px 0px 10px; cursor:pointer; color:gray; font-size:12px; font-family: 'Nanum Gothic', sans-serif;}
+      #subject > ul > li:hover {text-decoration:underline;}
+      #subject > button {float:right; width:100px; height:30px; border:none; background-color:#eee; font-size:12px; margin:10px 0px 0px 10px; cursor:pointer; font-family: 'Nanum Gothic', sans-serif;}
+      #subject > button:hover {background-color:#444; color:#fff;}
+
+      /* 다른 고객이 함께 본 제품 */
+      #together {width:1260px; height:950px; margin:0 auto;}
+      #together > h3 {font-size:20px; text-align:center; font-family: 'Nanum Gothic', sans-serif; padding:30px 0;}
+
+      #together > article {width:1250px; height:840px;}
+      #together > article > .box11 {width:237px; height:237px; float:left; margin:0px 10px 200px 5px;}
+      #together > article > .box11 > a > img {width:100%; height:100%;}
+      #together > article > .box11:nth-of-type(5n) {margin:0px 0px 200px 0px; float:right;}
+      #together > article > .box11 > h4 {font-size:13px; font-family: 'Nanum Gothic', sans-serif; margin:10px 0; color:#000;}
+      #together > article > .box11 > h4 > a {text-decoration:none; color:#000;}
+      #together > article > .box11 > p {font-size:12px; color:gray; margin:10px 0px 0px 0px; line-height:16px; text-decoration-line:line-through; font-family: 'Nanum Gothic', sans-serif;}
+      #together > article > .box11 > span {color:#000; font-size:13px; font-family: 'Nanum Gothic', sans-serif;}
+      #together > article > .box11 > span > a {color:black; text-decoration:none;}
+
+      footer {width:100%; height:400px; background-color:#f7f6f2;}
+      footer > #footerbox {width:1260px; height:100%; margin:0 auto; display:flex; flex-direction:row; justify-content:space-between; align-items:center;}
+
+      footer > #footerbox > .home {width:auto; height:auto;}
+      footer > #footerbox > .home > h4 {text-align:center; font-family: 'Nanum Gothic', sans-serif;}
+      footer > #footerbox > .home > ul {text-align:center;}
+      footer > #footerbox > .home > ul > li > a {color:gray; text-decoration:none; font-family: 'Nanum Gothic', sans-serif;}
+      footer > #footerbox > .home > ul > li > a > span {color:#006600;}
+
+      footer > #footerbox > .company {width:auto; height:auto;}
+      footer > #footerbox > .company > h4 {text-align:center; font-family: 'Nanum Gothic', sans-serif;}
+      footer > #footerbox > .company > ul {margin-left:70px;}
+      footer > #footerbox > .company > ul > li {float:left; padding:0px 5px 0px 5px;}
+      footer > #footerbox > .company > ul > li > a {color:#000; text-decoration:none; font-family: 'Nanum Gothic', sans-serif;}
+      footer > #footerbox > .company > p {text-align:center; color:gray; font-family: 'Nanum Gothic', sans-serif; font-family: 'Nanum Gothic', sans-serif; line-height:25px;}
+      footer > #footerbox > .company > p > a {color:gray;}
+
+      footer > #footerbox > .contact {width:auto; height:auto;}
+      footer > #footerbox > .contact > h4 {text-align:center; font-family: 'Nanum Gothic', sans-serif;}
+      footer > #footerbox > .contact > p {text-align:center; color:gray; font-family: 'Nanum Gothic', sans-serif;}
