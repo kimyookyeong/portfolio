@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>SteakIn</title>
+    <meta name="viewport" content="width=device-widtth, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    
+    <link href="css/common_footer.css" rel="stylesheet">
+    <link href="css/common_main_header.css" rel="stylesheet">
+    <link href="css/main_max_599.css" rel="stylesheet">
+    <link href="css/main_min_600.css" rel="stylesheet">
+    <link href="css/main_min_1100.css" rel="stylesheet">
+
+    <style>
+        #slider {background-image:url(img/back2.png);}
+        #special {background-image:url("img/back1.png");}
+        #happy {background-image:url("img/slider.png");}
+    </style>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+    <script>
+
+      $(function(){
+        $("#icon").click(function(){
+          $("#nav").slideToggle();
+        });
+      });
+
+      $(window).resize(function(){
+        if(window.innerWidth>=600){
+          $('#nav').show();
+        }
+
+      });
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <div id="wrap">
+
+      <div id="top">
+        <div id="slider">
+          <h1>We Are Food Masters!</h1>
+          <p>Steak In has the perfect place to enjoy fine food and great cocktails with<br>
+          excellent service, in comfortable atmospheric surroundings.</p>
+          <button><a href="#">BOOK YOUR TABLE NOW</a></button>
+        </div>
+
+        <header>
+          <div class="small">
+            <div id="logo">
+              <h1><a href="main.html">Steak In</a></h1>
+            </div>
+
+            <div id="icon">
+              <img src="img/icon1.jpg">
+              <img src="img/icon2.jpg">
+              <img src="img/icon3.jpg">
+            </div>
+          </div>
+
+          <div id="nav">
+            <ul>
+              <li><a href="main.html">HOME</a></li>
+              <li><a href="sub.html">ABOUT</a></li>
+              <li><a href="sub.html">MENU</a></li>
+              <li><a href="sub.html">BOOK A TABLE</a></li>
+              <li><a href="sub.html">FEATURES</a></li>
+              <li><a href="sub.html">BLOG</a></li>
+              <li><a href="sub.html">SHOP</a></li>
+              <li><a href="sub.html">ELEMENTS</a></li>
+            </ul>
+          </div>
+        </header>
+
+      </div>
+
+      <main>
+
+        <div id="welcome">
+          <div class="box1">
+            <h1>Welcome To Steak In</h1>
+            <p>Steak In was the first retaurant to open in Egypt,<br>
+              the resturant was designed with the history in mind<br>
+              we have created a soft industrial dining room,<br>
+              combined with an open kitchen, coffee take out bar<br>
+              and on site coffee roastery.</p>
+              <button><a href="#"><strong>BOOK A TABLE</strong></a></button>
+          </div>
+          <div class="box2"><img src="img/welcome1.jfif"></div>
+          <div class="box3"><img src="img/welcome2.png"></div>
+        </div>
+
+        <div id="special">
+          <div class="box">
+            <h1>Our Special Dishes</h1>
+
+            <div class="dishesbox">
+            
+              <div class="dishes1">
+                <img src="img/special1.png">
+                <h3>Grilled Fillet<br>
+                  <span>$26.95</span></h3>
+                <p>Pork fillet, ginger, garlic, honey,<br>
+                pepper & canola oil, Pork fillet.</p>
+              </div>
+
+              <div class="dishes2">
+                <img src="img/special2.png">
+                <h3>Grilled Seafood<br>
+                  <span>$44.95</span></h3>
+                <p>Monkfish, onion, paella rice,smoked<br>
+                paprika, Monkfish, onion, paella.</p>
+              </div>
+
+              <div class="dishes3">
+                <img src="img/special3.png">
+                <h3>Chicken Breast<br>
+                  <span>$28.95</span></h3>
+                <p>Paupiette of chicken & beans,<br>
+                blue cheese, rosemary & beans.</p>
+              </div>
+
+              <div class="dishes4">
+                <img src="img/special4.png">
+                <h3>Sea Trout<br>
+                  <span>$40.95</span></h3>
+                <p>Roast trout, English asparagus,<br>
+                watercress , delicious.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      <div id="daily">
+        <div class="listbox">
+          <h1>Daily New Fresh Meals</h1>
+          <p>Steak In has the perfect place to enjoy fine food and great cocktails with excellent service,<br>
+            in comfortable atmospheric surroundings.<br>
+            We have a soft dining room, combined with an open kitchen,<br>
+            coffee take out bar and alovely awesome on site coffee roastery.</p>
+            <ul>
+              <li><a href="#">Breakfast</a></li>
+              <li><a href="#">Lunch</a></li>
+              <li><a href="#">Dinner</a></li>
+              <li><a href="#">Dessert</a></li>
+              <li><a href="#">Drinks</a></li>
+            </ul>
+
+          <div class="dailybox">
+
+            <div class="box"><img src="img/daily1.jpg"></div>
+
+            <div class="box">
+              <h3>Grilled American Fillet</h3>
+              <h4>$24.95</h4>
+              <p>Pork fillet, ginger, garlic, honey,<br>
+              pepper & canola oil.creamy<br>
+              chesapeake crab dip with<br>
+              artichoke, baked and topped with<br>
+              cheddar cheese.</p>
+            </div>
+
+            <div class="spanbox"></div>
+
+            <div class="box"><img src="img/daily2.jpg"></div>
+
+            <div class="box">
+              <h3>Grilled Seafood Paella</h3>
+              <h4>$34.95</h4>
+              <p>Monkfish, onion, paella rice, garlic &<br>
+              smoked paprika, creamy<br>
+              chesapeake crab dip with<br>
+              artichoke, baked and topped with<br>
+              cheddar cheese.</p>
+            </div>
+
+            <div class="box"><img src="img/daily3.jpg"></div>
+
+            <div class="box">
+              <h3>Roast Sea Trout</h3>
+              <h4>$38.95</h4>
+              <p>Monkfish, onion, paella rice, garlic &<br>
+              smoked paprika, creamy<br>
+              chesapeake crab dip with<br>
+              artichoke, baked and topped with<br>
+              cheddar cheese.</p>
+            </div>
+
+            <div class="spanbox"></div>
+
+            <div class="box"><img src="img/daily4.jpg"></div>
+
+            <div class="box">
+              <h3>Smoked Paprika</h3>
+              <h4>$18.95</h4>
+              <p>Monkfish, onion, paella rice, garlic &<br>
+              smoked paprika, creamy<br>
+              chesapeake crab dip with<br>
+              artichoke, baked and topped with<br>
+              cheddar cheese.</p>
+            </div>
+          </div>
+
+          <button><a href="#">DISCOVER FULL MENU</a></button>
+
+        </div>
+      </div>
+
+        <div id="happy">
+          <div class="customer">
+            <h1>Happy Customers</h1>
+
+            <div class="happybox">
+              <div class="box">
+                <img src="img/star.jpg">
+                <p>"Steak In is simply the best. Great Food,<br>
+                nice atmosphere and very reasonable<br>
+                prices. It just doesn't get any better"</p>
+                <img src="img/happy1.png">
+                <h5>Michael Luke</h5>
+              </div>
+
+              <div class="box">
+                <img src="img/star.jpg">
+                <p>"We've been to Steak In many times<br>
+                over the years. We know what to expect:<br>
+                great food and awesome prices"</p>
+                <img src="img/happy2.png">
+                <h5>Henry Gabriel</h5>
+              </div>
+
+              <div class="box">
+                <img src="img/star.jpg">
+                <p>"The reasonable prices, the great<br>
+                atmosphere are only topped by the<br>
+                delicious food. keep up the great work"</p>
+                <img src="img/happy3.png">
+                <h5>Leo Jaxon</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="news">
+          <div class="newsbox">
+            <h1>Our News & Events</h1>
+            <div class="event">
+              <div class="box">
+                <img src="img/news1.jpg">
+                <div class="eventbox">
+                  <h3>The Best Side Dishes</h3>
+                  <p>From green bean casserole to mashed potatoes<br>
+                    and cranberry sauce, find standout Thankgiving<br>
+                    sides from Food Network chefs find standout.</p>
+                  <h5>Feb 22, 2021 / <span>Green, Casserole</span></h5>
+                </div>
+              </div>
+
+              <div class="box">
+                <img src="img/news2.jpg">
+                <div class="eventbox">
+                  <h3>Simple Recipes for Spring</h3>
+                  <p>My favorite form of cold-weather exercise is<br>
+                  snow-shoeing, but by chance I haven't been able<br>
+                  to go this year. Too busy working at the computer</p>
+                  <h5>May 14, 2021 / <span>Fall, Side Dish</span></h5>
+                </div>
+              </div>
+
+              <div class="box">
+                <img src="img/news3.jpg">
+                <div class="eventbox">
+                  <h3>Cake with Cream Cheese</h3>
+                  <p>I've been baking this cake for many years,<br>
+                  and have experimented with making it into cupcakes,<br>
+                  as a layer cake, serving it dusted with</p>
+                  <h5>Jan 9, 2021 / <span>Food, Cheese</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <footer> 
+        <div id="footertop">
+          <div class="topbox">
+
+            <div class="box1">
+              <h4>Follow Us</h4>
+              <div class="sns">
+                <img src="img/follow1.jpg">
+                <img src="img/follow2.jpg">
+                <img src="img/follow3.jpg">
+                <img src="img/follow4.jpg">
+                <img src="img/follow5.jpg">
+              </div>
+            </div>
+
+            <div class="box2">
+              <img src="img/logo.png">
+              <p>Steak In has the perfect place<br>
+                to enjoy fine food and great<br>
+                cocktails with excellent service,<br>
+                in comfortable atmospheric surroundings.
+                </p>
+            </div>
+
+            <div class="box3">
+              <h4>Neswletter</h4>
+              <form>
+                <input type="email" placeholder="Subscribe Our Newsletter">
+                <button type="submit">JOIN</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="footerbottom">
+            <div class="bottombox">
+              <p>22 Alnahas Building, Tanta, Egypt - 02 01065370701 - 7oroof@7oroof.com</p>
+              <p>© 2017 Steak In, With Love by <span>7oroof.com</span></p>
+            </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>
