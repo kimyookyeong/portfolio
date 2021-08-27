@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+      ul, li, ol {list-style:none;}
+
+      #wrap {width:100%; height:auto; margin:0 auto;}
+
+@media screen and (min-width:600px) and (max-width:1099px){
+        
+        section {width:100%; height:auto;}
+
+        #art {width:100%; height:auto; margin:0 auto; background-color:#18082F;}
+        #art > .artbox {width:99%; height:auto; margin:0 auto; display:flex; flex-direction:column-reverse;}
+
+        #art > .artbox > .bio {width:93%; height:250px; margin:0 auto; display:flex; justify-content:center; align-items:center; flex-direction:column;}
+        #art > .artbox > .bio > h1 {line-height:80px; font-size:40px; color:#fff; font-family: 'Rubik', sans-serif;}
+        #art > .artbox > .bio > h4 {line-height:80px; color:#fff; font-family: 'Rubik', sans-serif;}
+
+        #art > .artbox > .weeknd {width:99%; height:800px;}
+
+        #art > .artbox > .weeknd > .wimg {width:90%; height:50%; margin-left:5%;}
+        #art > .artbox > .weeknd > .wimg > img {width:100%; height:90%;}
+
+        #art > .artbox > .weeknd > .wtext {width:90%; height:50%;}
+        #art > .artbox > .weeknd > .wtext > h3 {padding-left:50px; font-size:28px; color:#fff; font-family: 'Rubik', sans-serif;}
+        #art > .artbox > .weeknd > .wtext > p {padding:50px 0px 55px 50px; color:#fff; font-family: 'Rubik', sans-serif;}
+        #art > .artbox > .weeknd > .wtext > img {padding-left:50px;}
+
+        #art > .artbox > .smith {width:99%; height:800px; margin:100px 0px 50px 0px; margin-left:5%;}
+
+        #art > .artbox > .smith > .simg {width:90%; height:50%;}
+        #art > .artbox > .smith > .simg > img {width:100%; height:90%;}
+
+        #art > .artbox > .smith > .stext {width:90%; height:50%;}
+        #art > .artbox > .smith > .stext > h3 {font-size:28px; color:#fff; font-family: 'Rubik', sans-serif;}
+        #art > .artbox > .smith > .stext > p {padding:50px 0px 80px 0px; color:#fff; font-family: 'Rubik', sans-serif;}
+
+        #art > .artbox > .aster {width:99%; height:800px;}
+
+        #art > .artbox > .aster > .aimg {width:90%; height:50%; margin-left:5%;}
+        #art > .artbox > .aster > .aimg > img {width:100%; height:90%;}
+
+        #art > .artbox > .aster > .atext {width:90%; height:50%;}
+        #art > .artbox > .aster > .atext > h3 {padding-left:50px; font-size:28px; color:#fff; font-family: 'Rubik', sans-serif;}
+        #art > .artbox > .aster > .atext > p {padding:50px 0px 55px 50px; color:#fff; font-family: 'Rubik', sans-serif;}
+        #art > .artbox > .aster > .atext > img {padding-left:50px;}
+
+        #shows {width:100%; height:auto; background-color:#18082F;}
+        #shows .showbox {width:100%; height:950px; margin:0 auto;}
+        #shows .showbox > h1 {text-align:center; font-size:40px; color:#fff; line-height:100px; padding-top:100px; font-family: 'Rubik', sans-serif;}
+        #shows .showbox > h4 {text-align:center; color:#fff; padding-bottom:80px; font-family: 'Rubik', sans-serif;}
+
+        #shows .showbox > table {width:90%; height:500px; margin-left:40px;}
+        #shows .showbox > table tr {cursor:pointer;}
+        #shows .showbox > table tr:hover {background-color:rgba(255, 255, 255, 0.1);}
+        #shows .showbox > table tr th {border-bottom:1px solid #fff; text-align:center; color:#fff; font-family: 'Rubik', sans-serif;}
+        #shows .showbox > table tr td {border-bottom:1px solid #fff; text-align:center; color:#fff; font-family: 'Rubik', sans-serif;}
+        #shows .showbox > table tr td:nth-child(3) {text-align:left;}
+        #shows .showbox > table tr td img {width:100px; height:100px;}
+        #shows .showbox > table tr td button {border-radius:40px; background:linear-gradient(135deg,#3a0766,#bd1779); color:#fff; border:2px solid #fff; font-weight:bold; width:140px; height:50px; cursor:pointer; font-family: 'Rubik', sans-serif;}
+
+        #band {width:99%; height:1500px; margin:0 auto; background-color:#fff; display:flex; flex-direction:column; justify-content:space-between; align-items:center; margin-top:100px;}
+        #band > .name {width:70%; height:40%; margin-bottom:50px; cursor:pointer;}
+        #band > .name:hover {transform:scale(1.1);}
+        #band > .name:nth-child(1){background-image:url(img/band1.jpg); background-size:cover; background-position:center;}
+        #band > .name:nth-child(2){background-image:url(img/band2.jpg); background-size:cover; background-position:center;}
+        #band > .name:nth-child(3){background-image:url(img/band3.jpg); background-size:cover; background-position:center;}
+        #band > .name > .ntext {width:100%; height:35%; background-color:rgba(0, 0, 0, 0.8); margin-top:300px;}
+        #band > .name > .ntext:hover {background-color:#bd1778;}
+
+        #band > .name > .ntext > h4 {color:#fff; padding:40px 0px 20px 20px; font-family: 'Rubik', sans-serif;}
+        #band > .name > .ntext > p {color:#fff; padding-left:20px; font-family: 'Rubik', sans-serif;}
+        #band > .name > .ntext > i {color:#fff; font-size:55px; position:relative; bottom:55px; left:500px;}
+
+        #play {width:100%; height:2500px; background-image:url(img/play.jpg); background-size:cover; background-position:bottom;}
+
+        #play > .album {width:99%; height:1500px; margin:0 auto; position:relative; top:400px; display:flex; justify-content:center; align-items:center;}
+        #play > .album > .beat {width:90%; height:90%; margin:0 auto; margin-left:7%;}
+
+        #play > .album > .beat > .bimg {width:95%; height:35%;}
+        #play > .album > .beat > .bimg > img {width:100%; height:100%;}
+
+        #play > .album > .beat > .btext {width:95%; height:45%; background-color:#27203F;}
+        #play > .album > .beat > .btext > p {color:#fff; padding:20px 0px 10px 20px; font-size:15px; font-family: 'Rubik', sans-serif;}
+        #play > .album > .beat > .btext > h5 {color:#fff; padding-left:20px; font-size:17px; font-family: 'Rubik', sans-serif;}
+        #play > .album > .beat > .btext > button {color:#fff; position:relative; left:530px; bottom:40px; width:160px; background:linear-gradient(135deg,#3a0766,#bd1779); height:40px; border:none; cursor:pointer; font-family: 'Rubik', sans-serif;}
+
+        #play > .album > .beat > .btext > table {width:99%; height:55%;}
+        #play > .album > .beat > .btext > table tr {cursor:pointer;}
+        #play > .album > .beat > .btext > table tr:hover {opacity:0.5;}
+        #play > .album > .beat > .btext > table td {color:#fff; font-family: 'Rubik', sans-serif;}
+        #play > .album > .beat > .btext > table td:nth-child(1){text-align:right;}
+        #play > .album > .beat > .btext > table td:nth-child(2){padding-left:25px; color:gray;}
+        #play > .album > .beat > .btext > table td:nth-child(3){padding-right:10px;}
+        #play > .album > .beat > .btext > table td i {color:#bd1778;}
+
+        #play > .album > .beat > .btext > .drop {background-color:#1C1632; margin-top:35px; width:100%; height:130px;}
+        #play > .album > .beat > .btext > .drop > p {color:#fff; padding:20px 0px 10px 20px; font-size:15px; font-family: 'Rubik', sans-serif;}
+        #play > .album > .beat > .btext > .drop > p > span {color:#fff; position:relative; left:580px; bottom:110px;}
+        #play > .album > .beat > .btext > .drop > h6 {color:#fff; padding-left:20px; font-size:17px; font-family: 'Rubik', sans-serif;}
+        #play > .album > .beat > .btext > .drop > i {color:#fff; position:relative; left:350px; bottom:50px; font-size:55px; cursor:pointer;}
+
+        #play > .search {width:99%; height:1000px; margin:0 auto; position:relative; top:55px; display:flex; flex-direction:column; justify-content:space-evenly; align-items:center;}
+
+        #play > .search > .music1 {background-image:url(img/music.jpg); background-size:cover; background-position:center; width:85%; height:35%; display:flex; justify-content:center; align-items:center; flex-direction:column; cursor:pointer;}
+        #play > .search > .music1:hover {background:rgba(189, 23, 120, 0.5);}
+
+        #play > .search > .music1 > h1 {color:#fff; font-size:50px; font-family: 'Rubik', sans-serif;}
+        #play > .search > .music1 > p {color:#fff; font-size:30px; font-family: 'Rubik', sans-serif;}
+
+        #play > .search > .music2 {background-image:url(img/artist.jpg); background-size:cover; background-position:center; width:85%; height:35%; display:flex; justify-content:center; align-items:center; flex-direction:column; cursor:pointer;}
+        #play > .search > .music2:hover {background:rgba(189, 23, 120, 0.5);}
+
+        #play > .search > .music2 > h1 {color:#fff; font-size:50px; font-family: 'Rubik', sans-serif;}
+        #play > .search > .music2 > p {color:#fff; font-size:30px; font-family: 'Rubik', sans-serif;}
+      }

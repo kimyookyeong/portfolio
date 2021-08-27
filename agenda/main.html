@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agenda</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <link href="css/common_footer.css" rel="stylesheet">
+    <link href="css/common_main_header.css" rel="stylesheet">
+    <link href="css/main_max_599.css" rel="stylesheet">
+    <link href="css/main_min_600.css" rel="stylesheet">
+    <link href="css/main_min_1100.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+    <style>
+      #slider {background-image:url(img/slider.jpg);}
+      #event {background-image:url(img/event.jpg);}
+
+      #event > .eventbox > .img_box1 {background-image:url(img/event1.jpg);}
+      #event > .eventbox > .img_box2 {background-image:url(img/event2.jpg);}
+      #event > .eventbox > .img_box3 {background-image:url(img/event3.jpg);}
+      #event > .eventbox > .img_box6 {background-image:url(img/event6.jpg);}
+      #event > .eventbox > .img_box7 {background-image:url(img/event7.jpg);}
+      #event > .eventbox > .img_box8 {background-image:url(img/event8.jpg);}
+      
+      #newyork {background-image:url(img/newyork.jpg);}
+      #subscribe {background-image:url(img/subscribe.jpg);}
+    </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">EVENTS</a>
+            <a href="#">NEWS</a>
+            <a href="#">CONTACT</a>
+          </div>
+
+          <div id="background">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+          </div>
+
+          <script>
+            function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("background").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("background").style.marginLeft= "0";
+            }
+          </script>
+
+      <div id="top">
+        <div id="slider">
+          <div class="sliderbox">
+            <h2><span>0</span>Days <span>0</span>Hours <span>0</span>Minutes <span>0</span>Seconds</h2>
+            <h1>1 We have the best events.<br>
+            Get your tiket now!</h1>
+            <button>Order here</button>
+          </div>
+        </div>
+
+        <header>
+          <div class="logo"><a href="main.html"><img src="img/logo.png"></a></div>
+
+          <div class="nav">
+            <ul>
+              <li><a href="main.html">HOME</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">EVENTS</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+
+          <div class="buy">
+            <button>Buy Tickets</button>
+          </div>
+        </header>
+      </div>
+
+      <section>
+
+        <div id="choose">
+          <div class="choosebox">
+            <div class="more"><img src="img/logo1.png"></div>
+            <div class="what">
+              <h1>What is Agenda and why<br>
+              choose our services?</h1>
+              <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui.<br>
+                Nullam tellus risus, pellentesque at facilisis et, scelerisque sit amet metus.<br>
+                Duis vel semper turpis, ac tempus libero. Maecenas id ultrices risus.<br>
+                Aenean nec ornare ipsum, lacinia volutpat urna. Maecenas ut aliquam purus.</p>
+              <button class="button1">Read More</button>
+              <button class="button2">Register Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="event">
+          <div class="eventbox">
+            <div class="img_box1">
+              <div class="text">
+                <h3>MICHAEL SMITH IN CONCERT</h3>
+                <p>August 25</p>
+              </div>
+            </div>
+
+            <div class="img_box2">
+              <div class="text">
+                <h3>STREET ART FEST</h3>
+                <p>November 28</p>
+              </div>
+            </div>
+
+            <div class="img_box3">
+              <div class="text">
+                <h3>ANABELLE IN CONCERT</h3>
+                <p>August 28</p>
+              </div>
+            </div>
+
+            <div class="img_box4"><img src="img/event4.jpg"></div>
+            <div class="img_box5"><img src="img/event5.png"></div>
+
+            <div class="img_box6">
+              <div class="text">
+                <h3>90’S DISCO NIGHT</h3>
+                <p>August 28</p>
+              </div>
+            </div>
+
+            <div class="img_box7">
+              <div class="text">
+                <h3>MODERN BALLET</h3>
+                <p>August 25</p>
+              </div>
+            </div>
+
+            <div class="img_box8">
+              <div class="text">
+                <h3>SMOKE SHOW</h3>
+                <p>August 28</p>
+              </div>
+            </div>
+
+            <div class="img_box9"><img src="img/event9.jpg"></div>
+            <div class="img_box10"><img src="img/event10.jpg"></div>
+            <div class="img_box11"><img src="img/event11.jpg"></div>
+          </div>
+        </div>
+
+        <div id="next">
+          <div class="nextbox">
+
+            <div class="our">
+              <div class="ourbox">
+                <img src="img/our1.jpg">
+                <h3>U2 Concert in Detroitt</h3>
+                <h4>SATURDAY <span>JAN 27, 2018</span></h4>
+                <p><a href="#">BUY TIKETS</a></p>
+              </div>
+
+              <div class="ourbox">
+                <img src="img/our2.jfif">
+                <h3>TED Talk California</h3>
+                <h4>SATURDAY <span>JAN 27, 2018</span></h4>
+                <p><a href="#">BUY TIKETS</a></p>
+              </div>
+
+              <div class="ourbox">
+                <img src="img/our3.jfif">
+                <h3>Ultra Music Miami</h3>
+                <h4>SATURDAY <span>JAN 27, 2018</span></h4>
+                <p><a href="#">BUY TIKETS</a></p>
+              </div>
+            </div>
+
+            <p>Vestibulum eget lacus at mauris sagittis varius. Etiam ut venenatis dui. Nullam tellus risus, pellentesque at facilisis et,<br>
+            scelerisque sit amet metus. Duis vel semper turpis, ac tempus libero. Maecenas id ultrices risus. Aenean nec ornare ipsum, lacinia.</p>
+            <h1>Our next events</h1>
+          </div>
+        </div>
+
+        <div id="newyork">
+          <div class="in">
+
+            <div class="inbox">
+              <div class="box">
+                <img src="img/in1.jpg">
+                <h4>U2 Concert</h4>
+                <p>SATURDAY <span>JAN 27, 2021</span></p>
+              </div>
+
+              <div class="box">
+                <img src="img/in2.jpg">
+                <h4>Broadway Hit</h4>
+                <p>SATURDAY <span>JAN 27, 2021</span></p>
+              </div>
+
+              <div class="box">
+                <img src="img/in3.jpg">
+                <h4>Gallery Exibition</h4>
+                <p>SATURDAY <span>JAN 27, 2021</span></p>
+              </div>
+
+              <div class="box">
+                <img src="img/in4.jpg">
+                <h4>Art Gallery</h4>
+                <p>SATURDAY <span>JAN 27, 2021</span></p>
+              </div>
+
+              <div class="box">
+                <img src="img/in5.jpg">
+                <h4>Music Concert</h4>
+                <p>SATURDAY <span>JAN 27, 2021</span></p>
+              </div>
+
+              <div class="box">
+                <img src="img/in6.jpg">
+                <h4>EDM Festival</h4>
+                <p>SATURDAY <span>JAN 27, 2021</span></p>
+              </div>
+            </div>
+
+            <div class="textbox">
+              <h1>Events in New York</h1>
+              <select>
+                <option>New York</option>
+                <option>California</option>
+                <option>South Carolina</option>
+              </select>
+            </div>  
+          </div>
+
+          <div class="partner">
+            <div class="partnerbox">
+              <div class="box"><a href="#"><img src="img/partner1.png"></a></div>
+              <div class="box"><a href="#"><img src="img/partner2.png"></a></div>
+              <div class="box"><a href="#"><img src="img/partner3.png"></a></div>
+              <div class="box"><a href="#"><img src="img/partner4.png"></a></div>
+              <div class="box"><a href="#"><img src="img/partner5.png"></a></div>
+              <div class="box"><a href="#"><img src="img/partner6.png"></a></div>
+              <div class="box"><a href="#"><img src="img/partner7.png"></a></div>
+              <div class="box"><a href="#"><img src="img/partner8.png"></a></div>
+              <div class="box"><a href="#"><img src="img/partner9.png"></a></div>
+              <div class="box"><a href="#"><img src="img/partner10.png"></a></div>
+            </div>
+            <h1>Partners</h1>
+          </div>
+        </div>
+
+        <div id="subscribe">
+          <div class="newsletter">
+            <h1>Subscribe to our newsletter to get the latest trends & news</h1>
+            <h5>Join our database NOW!</h5>
+            <input type="text" class="name" placeholder="Name">
+            <input type="text" class="email" placeholder="Your e-mail">
+            <button>Subscribe</button>
+          </div>
+        </div>
+
+      </section>
+
+      <footer>
+        <div id="footerbox">
+          <div class="footerlogo"><a href="main.html"><img src="img/logo.png"></a></div>
+          <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <p>Copyright ©2021 All rights reserved | This template is made with  by <span><a href="https://colorlib.com/">Colorlib</a></span></p>
+          <div class="icon">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-tripadvisor"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

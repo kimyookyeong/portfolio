@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+ul, li, ol {list-style:none;}
+
+@media screen and (min-width:600px) and (max-width:1099px){
+	#wrap {width:100%; height:auto; margin:0 auto;}
+
+      section {width:100%; height:auto; margin:0px auto;}
+
+      #choose {width:100%; height:750px;}
+      #choose > .choosebox {width:95%; height:670px; margin:0 auto; display:flex; flex-direction:row; align-items:center;}
+
+      #choose > .choosebox > .more {width:35%; height:250px; display:flex; align-items:center;}
+      #choose > .choosebox > .more > img {width:70%; height:90%; margin:0 auto;}
+
+      #choose > .choosebox > .what {width:65%; height:600px;}
+      #choose > .choosebox > .what > h1 {font-size:50px; padding-top:30px; font-family: 'Rubik', sans-serif;}
+      #choose > .choosebox > .what > p {color:#4d4d4d; line-height:30px; padding-top:30px; padding-bottom:50px; font-family: 'Rubik', sans-serif;}
+      #choose > .choosebox > .what > .button1 {width:160px; height:50px; border-radius:50px; color:#fff; background:linear-gradient(to right, #5E1381, #A702DF); font-weight:bold; border:none; margin-right:2%; cursor:pointer; font-family: 'Rubik', sans-serif;}
+      #choose > .choosebox > .what > .button2 {width:160px; height:50px; border-radius:50px; color:#fff; background-color:#000; font-weight:bold; border:none; cursor:pointer; font-family: 'Rubik', sans-serif;}
+      
+      #event {width:100%; height:2500px; background-image:url(img/event.jpg); background-position:top; background-size:cover;}
+
+      #event > .eventbox {width:100%; height:95%; margin:0 auto; position:relative;}
+
+      #event > .eventbox > .img_box1 {width:40%; height:400px; position:absolute; left:5%; top:100px; background-image:url(img/event1.jpg); background-position:center; background-size:cover; cursor:pointer;}
+      #event > .eventbox > .img_box1 > .text {position:absolute; left:20px; bottom:20px; width:70%; height:100px;}
+      #event > .eventbox > .img_box1 > .text > h3 {background-color:#9A24c1; color:#fff; font-weight:normal; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+      #event > .eventbox > .img_box1 > .text > p {color:#fff; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+
+      #event > .eventbox > .img_box2 {width:40%; height:400px; position:absolute; right:5%; top:100px; background-image:url(img/event2.jpg); background-position:center; background-size:cover; cursor:pointer;}
+      #event > .eventbox > .img_box2 > .text {position:absolute; left:20px; bottom:20px; width:65%; height:100px;}
+      #event > .eventbox > .img_box2 > .text > h3 {background-color:#9A24c1; color:#fff; font-weight:normal; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+      #event > .eventbox > .img_box2 > .text > p {color:#fff; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+
+      #event > .eventbox > .img_box3 {width:70%; height:300px; background-image:url(img/event3.jpg); background-position:center; background-size:cover; position:absolute; right:15%; left:15%; top:550px; cursor:pointer;}
+      #event > .eventbox > .img_box3 > .text {position:absolute; left:20px; bottom:20px; width:85%; height:100px;}
+      #event > .eventbox > .img_box3 > .text > h3 {background-color:#9A24c1; color:#fff; font-weight:normal; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+      #event > .eventbox > .img_box3 > .text > p {color:#fff; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+
+      #event > .eventbox > .img_box4 {width:35%; height:200px; position:absolute; left:10%; top:900px; cursor:pointer;}
+      #event > .eventbox > .img_box4 > img {width:100%; height:100%;}
+
+      #event > .eventbox > .img_box5 {width:35%; height:200px; position:absolute; right:10%; top:900px; cursor:pointer;}
+      #event > .eventbox > .img_box5 > img {width:100%; height:100%;}
+
+      #event > .eventbox > .img_box6 {width:40%; height:280px; background-image:url(img/event6.jpg); background-position:center; background-size:cover; position:absolute; left:5%; top:1150px; cursor:pointer;}
+      #event > .eventbox > .img_box6 > .text {position:absolute; left:20px; bottom:20px; width:68%; height:100px;}
+      #event > .eventbox > .img_box6 > .text > h3 {background-color:#9A24c1; color:#fff; font-weight:normal; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+      #event > .eventbox > .img_box6 > .text > p {color:#fff; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+
+      #event > .eventbox > .img_box7 {width:40%; height:470px; background-image:url(img/event7.jpg); background-position:center; background-size:cover; position:absolute; right:5%; top:1150px; cursor:pointer;}
+      #event > .eventbox > .img_box7 > .text {position:absolute; left:20px; bottom:20px; width:45%; height:100px;}
+      #event > .eventbox > .img_box7 > .text > h3 {background-color:#9A24c1; color:#fff; font-weight:normal; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+      #event > .eventbox > .img_box7 > .text > p {color:#fff; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+
+      #event > .eventbox > .img_box8 {width:40%; height:310px; background-image:url(img/event8.jpg); background-position:center; background-size:cover; position:absolute; left:5%; top:1470px; cursor:pointer;}
+      #event > .eventbox > .img_box8 > .text {position:absolute; left:20px; bottom:20px; width:53%; height:100px;}
+      #event > .eventbox > .img_box8 > .text > h3 {background-color:#9A24c1; color:#fff; font-weight:normal; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+      #event > .eventbox > .img_box8 > .text > p {color:#fff; width:100%; height:50px; padding:10px 0px 0px 17px; font-family: 'Rubik', sans-serif;}
+
+      #event > .eventbox > .img_box9 {width:25%; height:130px; position:absolute; left:5%; top:1820px; cursor:pointer;}
+      #event > .eventbox > .img_box9 > img {width:100%; height:100%;}
+
+      #event > .eventbox > .img_box10 {width:30%; height:190px; position:absolute; right:10%; top:1670px; cursor:pointer;}
+      #event > .eventbox > .img_box10 > img {width:100%; height:100%;}
+
+      #event > .eventbox > .img_box11 {width:30%; height:190px; position:absolute; left:35%; top:1900px; cursor:pointer;}
+      #event > .eventbox > .img_box11 > img {width:100%; height:100%;}
+
+      #next {width:100%; height:900px;}
+
+      #next > .nextbox {width:95%; height:100%; margin:0 auto; display:flex; flex-direction:column-reverse;}
+      #next > .nextbox > h1 {text-align:center; font-size:55px; font-family: 'Rubik', sans-serif;}
+      #next > .nextbox > p {text-align:center; padding:30px 0px 30px 0px; line-height:30px; color:#666; font-family: 'Rubik', sans-serif;}
+
+      #next > .nextbox > .our {width:100%; height:70%; display:flex; flex-direction:row; justify-content:space-between; align-items:center;}
+      #next > .nextbox > .our > .ourbox {width:31%; height:80%;}
+      #next > .nextbox > .our > .ourbox > img {width:100%; height:55%; cursor:pointer;}
+      #next > .nextbox > .our > .ourbox > h3 {text-align:center; font-size:25px; padding-top:20px; font-family: 'Rubik', sans-serif;}
+      #next > .nextbox > .our > .ourbox > h4 {text-align:center; color:gray; padding:20px 0px 20px 0px; font-family: 'Rubik', sans-serif;}
+      #next > .nextbox > .our > .ourbox > h4 > span {color:#9A24c1;}
+      #next > .nextbox > .our > .ourbox > p {text-align:center; color:#999; text-decoration:underline; font-weight:bold;}
+      #next > .nextbox > .our > .ourbox > p > a {color:#999; font-family: 'Rubik', sans-serif;}
+      #next > .nextbox > .our > .ourbox > p > a:hover {color:#9A24c1;}
+
+      #newyork {width:100%; height:3000px; background-image:url(img/newyork.jpg); background-position:bottom; background-size:cover;}
+
+      #newyork > .in {width:100%; height:1200px; margin:0 auto; display:flex; flex-direction:column-reverse; position:relative; top:550px;}
+
+      #newyork > .in > .textbox {display:flex; flex-direction:row; justify-content:space-between; align-items:center; height:90px;}
+      #newyork > .in > .textbox > h1 {font-size:50px; color:#fff; font-family: 'Rubik', sans-serif;}
+      #newyork > .in > .textbox > select {width:200px; height:60px; font-weight:bold; color:#fff; background:linear-gradient(to right, #5E1381, #A702DF); border:2px solid #fff; border-radius:50px; padding-left:30px; cursor:pointer; font-family: 'Rubik', sans-serif;}
+      #newyork > .in > .textbox > select > option {color:#fff; background-color:#9A24c1; font-family: 'Rubik', sans-serif;}
+
+      #newyork > .in > .inbox {width:100%; height:90%; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; margin-top:20px;}
+
+      #newyork > .in > .inbox > .box {width:30%; height:530px;}
+      #newyork > .in > .inbox > .box > img {width:100%; height:75%; cursor:pointer;}
+      #newyork > .in > .inbox > .box > img:hover {opacity:0.5;}
+      #newyork > .in > .inbox > .box > h4 {text-align:center; color:#fff; font-size:18px; padding-top:15px; font-family: 'Rubik', sans-serif;}
+      #newyork > .in > .inbox > .box > p {text-align:center; color:#fff; font-size:13px; padding-top:15px; font-weight:bold; font-family: 'Rubik', sans-serif;}
+      #newyork > .in > .inbox > .box > p > span {color:#9A24c1;}
+
+      #newyork > .partner {width:100%; height:1000px; margin:0 auto; margin-top:700px; display:flex; flex-direction:column-reverse;}
+      #newyork > .partner > h1 {font-size:50px; color:#fff; text-align:center; padding-bottom:20px; font-family: 'Rubik', sans-serif;}
+
+      #newyork > .partner > .partnerbox {width:100%; height:90%; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center;}
+      #newyork > .partner > .partnerbox > .box {width:30%; height:20%; display:flex; align-items:center; justify-content:center;}
+      #newyork > .partner > .partnerbox > .box > a {display:flex; align-items:center; justify-content:center;}
+      #newyork > .partner > .partnerbox > .box > a > img {width:80%; height:40%;}
+
+      #subscribe {width:100%; height:630px; background-image:url(img/subscribe.jpg); background-position:center; background-size:cover;}
+      #subscribe > .newsletter {width:90%; height:100%; margin:0 auto; display:flex; flex-direction:column; justify-content:center; align-items:center;}
+      #subscribe > .newsletter > h1 {text-align:center; color:#fff; font-size:33px; padding-top:10%; font-family: 'Rubik', sans-serif;}
+      #subscribe > .newsletter > h5 {text-align:center; color:#fff; font-size:20px; padding-top:30px; font-family: 'Rubik', sans-serif;}
+      #subscribe > .newsletter > .name {width:500px; height:50px; border-radius:10px; border:none; padding-left:30px; margin:50px 0px 30px 0px;}
+      #subscribe > .newsletter > .email {width:500px; height:50px; border-radius:10px; border:none; padding-left:30px; margin-bottom:30px;}
+      #subscribe > .newsletter > button {color:#fff; background:linear-gradient(to right, #5E1381, #A702DF); border:2px solid #fff; border-radius:50px; width:170px; height:60px; font-weight:bold; font-size:16px; cursor:pointer; font-family: 'Rubik', sans-serif;}
+}

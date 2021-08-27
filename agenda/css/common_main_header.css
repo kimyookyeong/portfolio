@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+* {margin:0; padding:0; box-sizing:border-box;}
+ul, li, ol {list-style:none;}
+
+@media screen and (max-width:599px) {
+	#wrap {width:100%; height:auto; margin:0 auto;}
+
+     #top {width:100%; height:800px; margin:0 auto; position:relative;}
+
+      header {width:100%; height:150px; z-index:3; position:absolute; top:0px; left:50%; transform:translateX(-50%);}
+
+      header > .logo {width:150px; height:100px; position:absolute; top:30px; left:65%;}
+      header > .logo > a > img {width:90%; height:100%;}
+
+      header > .nav {display:none;}
+
+      .sidebar {height:100%; width:0; position:fixed; z-index:5; top:0; left:0; background-color:#9A28D7; overflow-x:hidden; transition:0.5s; padding-top:65px;}
+
+      .sidebar a {padding:10px 8px 10px 32px; text-decoration:none; font-size:23px; color:#fff; display:block; transition:0.3s; font-family: 'Rubik', sans-serif;}
+      .sidebar a:hover {background-color:purple;}
+
+      .sidebar .closebtn {position:absolute; top:0; right:25px; font-size:36px; margin-left:50px;}
+      .sidebar .closebtn:hover {background-color:initial; color:rgba(255, 255, 255, 50%);}
+
+      .openbtn {position:absolute; top:35px; z-index:5; font-size:40px; font-weight:bold; cursor:pointer; color:white; padding:10px 15px; border:none; width:120px; background-color:rgba(255, 255, 255, 1%);}
+      .openbtn:hover {color:rgba(255, 255, 255, 50%);}
+
+      #background {width:300px; position:absolute; top:0; z-index:5; transition:margin-left .5s; padding:16px;}
+      
+      header > .buy {display:none;}
+
+      #slider {width:100%; height:750px; background-image:url(img/slider.jpg); background-size:cover; background-position:center; z-index:1; position:absolute; top:0; left:0;}
+
+      #slider > .sliderbox {width:95%; height:auto; position:absolute; left:5%; top:35%;}
+      #slider > .sliderbox > h2 {color:#fff; padding-bottom:15px; font-family: 'Rubik', sans-serif;}
+      #slider > .sliderbox > h2 > span {font-size:50px;}
+      #slider > .sliderbox > h1 {color:#fff; font-size:50px; font-family: 'Rubik', sans-serif;}
+      #slider > .sliderbox > button {width:170px; height:60px; border-radius:50px; font-size:15px; color:#fff; background:linear-gradient(to right, #5E1381, #A702DF); border:2px solid #fff; font-weight:bold; margin-top:50px; cursor:pointer; font-family: 'Rubik', sans-serif;}
+}
+
+@media screen and (min-width:600px) and (max-width:1099px){
+	#wrap {width:100%; height:auto; margin:0 auto;}
+
+     #top {width:100%; height:800px; margin:0 auto; position:relative;}
+
+      header {width:100%; height:150px; z-index:3; position:absolute; top:0px; left:50%; transform:translateX(-50%);}
+
+      header > .logo {width:150px; height:100px; position:absolute; top:30px; left:75%;}
+      header > .logo > a > img {width:90%; height:100%;}
+
+      header > .nav {display:none;}
+
+      .sidebar {height:100%; width:0; position:fixed; z-index:5; top:0; left:0; background-color:#9A28D7; overflow-x:hidden; transition:0.5s; padding-top:65px;}
+
+      .sidebar a {padding:10px 8px 10px 32px; text-decoration:none; font-size:23px; color:#fff; display:block; transition:0.3s; font-family: 'Rubik', sans-serif;}
+      .sidebar a:hover {background-color:purple;}
+
+      .sidebar .closebtn {position:absolute; top:0; right:25px; font-size:36px; margin-left:50px;}
+      .sidebar .closebtn:hover {background-color:initial; color:rgba(255, 255, 255, 50%);}
+
+      .openbtn {position:absolute; top:35px; z-index:5; font-size:40px; font-weight:bold; cursor:pointer; color:white; padding:10px 15px; border:none; width:120px; background-color:rgba(255, 255, 255, 1%);}
+      .openbtn:hover {color:rgba(255, 255, 255, 50%);}
+
+      #background {width:300px; position:absolute; top:0; z-index:5; transition:margin-left .5s; padding:16px;}
+      
+      header > .buy {display:none;}
+
+      #slider {width:100%; height:750px; background-image:url(img/slider.jpg); background-size:cover; background-position:center; z-index:1; position:absolute; top:0; left:0;}
+      #slider > .sliderbox {width:60%; height:auto; position:absolute; top:35%; left:5%;}
+      #slider > .sliderbox > h2 {color:#fff; padding-bottom:15px; font-family: 'Rubik', sans-serif;}
+      #slider > .sliderbox > h2 > span {font-size:50px;}
+      #slider > .sliderbox > h1 {color:#fff; font-size:50px; font-family: 'Rubik', sans-serif;}
+      #slider > .sliderbox > button {width:170px; height:60px; border-radius:50px; font-size:15px; color:#fff; background:linear-gradient(to right, #5E1381, #A702DF); border:2px solid #fff; font-weight:bold; margin-top:50px; cursor:pointer; font-family: 'Rubik', sans-serif;}
+}
+
+@media screen and (min-width:1100px) {
+	#wrap {width:100%; height:auto; margin:0 auto;}
+
+      .sidebar {display:none;}
+        #background {display:none;}
+
+        #top {width:100%; height:900px; margin:0 auto; position:relative;}
+
+      header {width:100%; height:150px; z-index:3; position:absolute; top:0px; left:50%; transform:translateX(-50%); display:flex; flex-direction:row; justify-content:space-between; align-items:center;}
+
+      header > .logo {width:150px; height:100px;}
+      header > .logo > a > img {width:90%; height:100%;}
+
+      header > .nav {width:500px; height:100px;}
+      header > .nav > ul {float:center; margin:23px 0px 0px 17px; color:#fff; font-weight:bold;}
+      header > .nav > ul > li {float:left; padding:15px;}
+      header > .nav > ul > li > a {text-decoration:none; color:#fff; font-family: 'Rubik', sans-serif;}
+
+      header > .buy {width:200px; height:100px;}
+      header > .buy > button {width:90%; height:60%; border-radius:50px; font-size:15px; margin:20px 0px 0px 10px; background:linear-gradient(to right, #5E1381, #A702DF); color:#fff; border:2px solid #fff; font-weight:bold; cursor:pointer; font-family: 'Rubik', sans-serif;}
+
+      #slider {width:100%; height:900px; background-image:url(img/slider.jpg); background-size:cover; background-position:center; z-index:1; position:absolute; top:0; left:0;}
+      #slider > .sliderbox {width:800px; height:auto; position:absolute; top:45%; left:5%;}
+      #slider > .sliderbox > h2 {color:#fff; padding-bottom:15px; font-family: 'Rubik', sans-serif;}
+      #slider > .sliderbox > h2 > span {font-size:50px;}
+      #slider > .sliderbox > h1 {color:#fff; font-size:60px; font-family: 'Rubik', sans-serif;}
+      #slider > .sliderbox > button {width:170px; height:60px; border-radius:50px; font-size:15px; color:#fff; background:linear-gradient(to right, #5E1381, #A702DF); border:2px solid #fff; font-weight:bold; margin-top:50px; cursor:pointer; font-family: 'Rubik', sans-serif;}
+}
